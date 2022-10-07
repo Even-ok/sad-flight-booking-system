@@ -1,0 +1,91 @@
+﻿
+@using MyFlightManager.Models;
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowOrder</title>
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <script src="~/Scripts/axios.js"></script>
+</head>
+<body>
+    <div id="app2">
+        <input type="text" placeholder="用户ID" id="userID">
+        <button v-on:click=" get_flight()">查看航班信息</button>
+        <br />
+    </div>
+    <template>
+        <div v-for="item in flights">({item})</div>
+    </template>
+
+    <div id="app">
+
+        {{message}}
+
+    </div>
+
+@*    (string userID, string flightNumber, DateTime flightDate, int price, string flight_class, string passengerName)*@
+    <script type="text/javascript">
+        new Vue({
+            el: '#app2',
+            data: {
+                content: "hello world",
+                flights: []
+            },
+            methods: {
+                get_flight: function () {
+                    axios.post("/Ticket/getFlight", { id: "123456" })
+                        .then(res => {
+                            console.log(res)
+                        })
+                }
+            }
+        })
+    </script>
+</body>
+
+@*<script type="text/javascript">
+        export default {
+            data() {
+                return {
+                    content: "hello world",
+                    flights:[]
+                }
+            },
+            methods: {
+                get_flight() {
+                    this.$axios.post("Ticket/getFlight")
+                        .then(res => {
+                            console.log(res)
+                        })
+                }
+            }
+        }
+    </script>*@
+
+<script type="text/javascript">
+
+    new Vue({
+
+        el: '#app',
+
+        data: {
+
+            message: "使用ASP.NET Core结合Vue的第一个示例Demo."
+
+        }
+
+    });
+
+</script>
+</html>
+
+

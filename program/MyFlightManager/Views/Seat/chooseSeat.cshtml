@@ -1,0 +1,120 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <script src="~/Scripts/axios.min.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="~/css/normalize.css"/>*@
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/css/seatchoose.css")
+</head>
+<body>
+    <script>
+
+        function initMes() {
+            axios.post("/Seat/initMessage", {
+                ticket_ID: window.name
+            })
+                .then(response => {
+                    var data = JSON.parse(response.data);
+                    document.getElementById("name").innerText = "旅客姓名：" + data.passenger_name;
+                    document.getElementById("id").innerText = "机票ID：" + data.ticket_ID;
+                    document.getElementById("class").innerText = "舱位等级：" + data.flight_class;
+                    document.getElementById("info").innerText = "航班信息：" + data.airline;
+                })
+                .catch(error => {
+                    console.log(666);
+                })
+        }
+
+        window.onload = initMes;
+    </script>
+    <div id="seatchoose">
+        <div id="page">
+            <el-container style="height: 500px;">
+                <el-header style="height: 100px;width: 1200px;border-bottom: 3px dotted #4862b9;font-family: 微软雅黑;margin-left: 150px;border-radius: 25px 25px 0 0;text-shadow: 3px 3px 3px rgba(0,0,0,.4); ">
+                    值机选座
+                </el-header>
+                <el-container>
+                    <el-aside style="width:400px; height:500px;border-right:3px dotted #4862b9;margin-left:150px;border-radius:0px 0px 0 25px;">
+                        <ul>
+                            <li style="font-weight:bold;"><span id="name"></span></li>
+                            <li style="font-weight:bold;"><span id="id"></span></li>
+                            <li style="font-weight:bold;"><span id="class"></span></li>
+                            <li style="font-weight:bold;"><span id="info"></span></li>
+                        </ul>
+                    </el-aside>
+                    <el-container>
+                        <el-main style="width:800px; height:400px">
+                            <div class="wrapper">
+                                <div class="flight-wrapper">
+                                    <div class="illustration">
+                                        <div class="illustration-img-wrapper unselected-seat">
+                                            <span class="illustration-text">可选</span>
+                                        </div>
+                                        <div class="illustration-img-wrapper selected-seat">
+                                            <span class="illustration-text">已选</span>
+                                        </div>
+
+                                        <div class="illustration-img-wrapper bought-seat">
+                                            <span class="illustration-text">不可选</span>
+                                        </div>
+
+                                    </div>
+                                    <div style="height:20px;"></div>
+                                    <div class="seat-wrapper">
+                                        <div class="front">
+                                            飞机前部
+                                            <div class="mid-line"></div>
+                                        </div>
+                                        @*<div class="flight-center">
+                                               <p style="top: -40px;">飞机中央</p>
+
+                                            </div>*@
+                                    <div class="inner-seat-wrapper" ref="innerSeatWrapper">
+                                        <p v-if="seatCol===6" style=" font-size: 23px; letter-spacing: 21px; color: grey; line-height: 60px;">
+                                            A&nbsp;B&nbsp;C&nbsp;D&nbsp;E&nbsp;F
+                                        </p>
+                                        <p v-if="seatCol===4" style=" font-size: 23px; letter-spacing: 35px; color: grey; line-height: 60px;">
+                                            &nbsp;A&nbsp;B&nbsp;C&nbsp;D
+                                        </p>
+                                        <div v-for="(row,index) in seatRow">
+                                            <p style="color:grey;line-height:20px;">{{ index+1>9?index+1:"0"+(index+1) }}</p>
+                                            <div v-for="col in seatCol"
+                                                 v-if="seatArray.length>0"
+                                                 class="seat"
+                                                 :style="{width:seatSize+'px',height:seatSize+'px'}">
+                                                <div class="inner-seat"
+                                                     v-on:click="handleChooseSeat(row-1,col-1)"
+                                                     v-if="seatArray[row-1][col-1]!==-1"
+                                                     :class="seatArray[row-1][col-1]===2?'bought-seat':(seatArray[row-1][col-1]===1?'selected-seat':'unselected-seat')">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </el-main>
+                        <el-footer style="height:100px; width:800px;border-radius:0px 0px 25px 0;">
+                            <div class="btn-buy" v-on:click="buySeat">
+                                选定座位
+                            </div>
+                        </el-footer>
+                    </el-container>
+                </el-container>
+            </el-container>
+            <script src="~/js/chooseSeat.js"></script>
+        </div>
+    </div>
+
+</body>
+
+
+

@@ -1,0 +1,96 @@
+﻿#feedbackList {
+    background-image: url("../img/rec.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 60px;
+    margin-top: 60px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+    #feedbackList h1 {
+        font-size: 20px;
+        color: #333;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #DCDFE6;
+    }
+
+#admin {
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    background-image: url("../img/backgroundimage.jpg");
+    background-size: cover;
+    z-index: -10;
+    background-position: center 0;
+    width: 100%;
+    height: 100%;
+}
+
+#hintmes {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#admin h1 {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #515151;
+}
+
+.el-table {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 50px;
+    background: 0;
+    border: none;
+}
+
+    .el-table::before {
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+    }
+
+.el-table--border::after, .el-table--group::after {
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+}
+
+.el-form .el-form-item .el-input {
+    width: 170px;
+}
+
+.demo-table-expand {
+    font-size: 0;
+}
+
+    .demo-table-expand label {
+        width: 0px;
+        color: #99a9bf;
+    }
+
+    .demo-table-expand .el-form-item {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 45%;
+    }
+
+.el-button--primary {
+    width: 60px;
+    color: #FFF;
+    background-color: #4862b9;
+    border-color: #4862b9;
+}
+
+#feedbackList span {
+    margin: 0 0px;
+}

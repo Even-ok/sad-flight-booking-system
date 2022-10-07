@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    <title>feedbackhandle</title>
+    @Styles.Render("~/css/feedback.css")
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin-left: 0px;
+    }
+</style>
+<div>
+    @RenderPage("~/Views/Flight/AdminHeadBar.cshtml")
+</div>
+<div id="admin">
+    <div id="hintmes">
+        <div id="feedbackList">
+            <h1>收到的反馈信息</h1>
+            <el-table :header-cell-style="{background:'#4862b9',color:'#fff'}"
+                      :data="tableData"
+                      border
+                      style="width:100%"
+                      height="350"
+                      highlight-current-row v-on:row-click="handleCurrentChange">
+                <template slot-scope="props">
+                    <el-table-column prop="feedback_ID"
+                                     label="反馈编号"
+                                     style="width: 10%">
+                    </el-table-column>
+                    <el-table-column prop="user_ID"
+                                     label="用户ID"
+                                     style="width: 10%">
+                    </el-table-column>
+                    <el-table-column prop="feedback_time"
+                                     label="反馈时间"
+                                     style="width: 20%">
+                    </el-table-column>
+                    <el-table-column prop="feedback_state"
+                                     label="状态"
+                                     style="width: 20%">
+                    </el-table-column>
+                    <el-table-column prop="operation"
+                                     label="操作"
+                                     style="width: 20%">
+                        <!--加入按钮-->
+                        <template slot-scope="scope">
+                            <el-button type="primary" size="mini" v-on:click="handleFeedback(scope.row.feedback_ID)">回复</el-button>
+                        </template>
+                    </el-table-column>
+                </template>
+            </el-table>
+        </div>
+    </div>
+</div>
+<script src="~/js/displayFeedback.js"></script>
+</html>

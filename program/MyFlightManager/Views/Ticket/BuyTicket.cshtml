@@ -1,0 +1,111 @@
+﻿@{ 
+    Layout = null;
+}
+@using System
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowOrder</title>
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-router.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.js"></script>
+    <script src="~/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="~/js/AirportName.js"></script>
+
+    @Styles.Render("~/css/buyTicket.css")
+</head>
+<body>
+    @RenderPage("~/Views/Flight/HeadBar.cshtml")
+    <div id="app2">
+                <el-card class="box-card" style="width: 100%">
+                    <div class="text item">
+                        <ul>
+                            航班价格变动频繁，请您尽快完成订单的填写与确认。
+                            <br />
+                            此航班价格剩余票数紧张，请及时预订。
+                            <br />
+                            请您仔细确认航班信息和乘机人信息。
+                            <br />
+                        </ul>
+                    </div>
+                </el-card>
+                <h1>请确认您的订单信息</h1>
+                <el-col :span="24">
+                    <div class="grid-content bg-purple-dark">
+                        <h2>航班详情</h2>
+                        <el-table :data="tableData1"
+                                  style="width: 100%">
+
+                            <el-table-column prop="flightNo"
+                                             label="航班号">
+                            </el-table-column>
+                            <el-table-column prop="companyName"
+                                             label="航空公司">
+                            </el-table-column>
+                            <el-table-column prop="departTime"
+                                             label="起飞时间">
+                            </el-table-column>
+                            <el-table-column prop="arrivalTime"
+                                             label="到达时间">
+                            </el-table-column>
+                            <el-table-column prop="departport"
+                                             label="出发地">
+                            </el-table-column>
+                            <el-table-column prop="arrivalport"
+                                             label="到达地">
+                            </el-table-column>
+                            <el-table-column prop="flightClass"
+                                             label="舱位">
+                            </el-table-column>
+                            <el-table-column prop="Price"
+                                             label="价格"
+                                             name="Price">
+                            </el-table-column>
+                        </el-table>
+                    </div>
+                </el-col>
+                <el-col :span="24">
+                    <h1>请确认乘客信息</h1>
+                    <div class="grid-content bg-purple-dark">
+                        <h2>乘客信息</h2>
+                        <el-table :data="tableData2"
+                                  style="width: 100%">
+                            <el-table-column prop="userName"
+                                             label="乘客姓名">
+                            </el-table-column>
+                            <el-table-column prop="userPhoneNumber"
+                                             label="联系方式">
+                            </el-table-column>
+                            <el-table-column prop="userIDcard"
+                                             label="身份证号">
+                            </el-table-column>
+                        </el-table>
+                    </div>
+                </el-col>
+                <el-row :gutter="12">
+                    <el-col :span="8" :offset="16">
+                        <div class="grid-content bg-purple" style="float:right">
+                            总金额：<p style="font-size:30px;color:#cc6666">{{ticketPrice}}</p>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="12">
+                    <el-col :span="8" :offset="16">
+                        <div class="grid-content bg-purple">
+                            <el-button type="danger" style="float:right" v-on:click=" add_ticket()">确认购买</el-button>
+                        </div>
+                    </el-col>
+                </el-row>
+    </div>
+    <br />
+</body>
+
+<script src="~/js/buyTicket.js"></script>
+
+</html>

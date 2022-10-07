@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    @Styles.Render("~/css/jet_lag.css")
+    @Styles.Render("~/css/Home.css")
+
+
+</head>
+
+
+<div id="app">
+    <div>
+        @RenderPage("~/Views/Flight/HeadBar.cshtml")
+    </div>
+    <div id="building">
+        <div id="content">
+            <div id="jet_lag">
+                <div id="local_currenttime">
+                    中国-北京时间：
+                    {{nowDate}}
+                </div>
+                <div id='jet_lag_table'>
+                    <el-table :data="showTable"
+                              stripe="true"
+                              height='480'
+                              style="width: 82%;border-top:1px #e5e5e5 solid">
+                        <el-table-column label="国家"
+                                         prop="name"
+                                         width="300"
+                                         align="center">
+                        </el-table-column>
+                        <el-table-column label="城市"
+                                         prop="date"
+                                         width="300"
+                                         align="center">
+                        </el-table-column>
+                        <el-table-column label="时差（距离北京）"
+                                         prop="time_jetlag"
+                                         width="180"
+                                         align="center">
+                        </el-table-column>
+                        <el-table-column align="right">
+                            <template slot="header" slot-scope="scope">
+                                <el-input v-model="search"
+                                          size="mini"
+                                          placeholder="输入国家名称搜索"
+                                          clearable>
+                                </el-input>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                </div>
+                <div id="resource-page">
+                    <el-pagination v-on:size-change="handleSizeChange"
+                                   v-on:current-change="handleCurrentChange"
+                                   :current-page.sync="currentPage"
+                                   :page-size="pagesize" :pager-count="9"
+                                   layout="prev, pager, next, jumper"
+                                   :total="filterDataShow.length">
+                    </el-pagination>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/jet_lag.js"></script>

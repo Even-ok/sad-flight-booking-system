@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1142d0145a54434aa26173d5a67d07ac" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.ADMIN_ACCOUNT" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AIRLINE" Width="1.5" PointX="1.5" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AIRLINE_COMPANY" Width="1.5" PointX="1.5" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AIRPLANE" Width="1.5" PointX="1.5" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AIRPORT" Width="1.5" PointX="8" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ARRIVES" Width="1.5" PointX="10.25" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CANCELS" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CHANGES" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CITY" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DEPARTS" Width="1.5" PointX="10.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FEEDBACK" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FEEDBACK_ANSWER" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FLIGHT" Width="1.5" PointX="1.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MESSAGE" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PLANE_TICKET" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PURCHASES" Width="1.5" PointX="6" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SEAT" Width="1.5" PointX="3.75" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TIME_DIFFERENCE" Width="1.5" PointX="8.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.USER_ACCOUNT" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.USER_SEAT" Width="1.5" PointX="3" PointY="32.375" IsExpanded="true" />
+        <AssociationConnector Association="Model.SYS_C007860" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007829" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007835" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007838" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007826" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007828" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007853" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007832" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007834" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007837" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007847" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007848" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007850" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007851" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007857" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007859" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007842" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007855" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007845" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007863" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C007844" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

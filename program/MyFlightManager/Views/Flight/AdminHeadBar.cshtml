@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HeadBar</title>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/css/head.css")
+</head>
+<body>
+    <div id="guidebar">
+        <ul id="head">
+            <li><img src="~/img/logo.png"></li>
+            <li><a href="~/AdminManager/flightMessage"><span>信息管理</span></a></li>
+            <li><a href="~/Feedback/displayFeedback" ><span>反馈处理</span></a></li>
+        </ul>
+        <ul id="head2">
+            <li><a href="javascript:;" onclick="exit()" style=""><span>退出</span></a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        padding:0px;
+    }
+</style>
+<script>
+    function exit() {
+        if (confirm("确定退出系统？")) {
+            $.ajax({
+                url: "/AccountManager/AdminLogOff",
+                async: false,
+                type: 'post',
+                traditional: true,
+                success: function (data) {
+                    var data = eval("(" + data + ")");
+                    var FLAG = data.state;
+                    if (FLAG == 1) {
+                        alert('退出成功！');
+                        window.location.replace('../mylogin.html');
+                    }
+                }
+            })
+        }
+    }
+</script>

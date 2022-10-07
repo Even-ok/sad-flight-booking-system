@@ -1,0 +1,189 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/css/Personalpage.css")
+</head>
+
+<div id="app">
+    @RenderPage("~/Views/Flight/HeadBar.cshtml")
+    <div class="elnav">
+        <div class="grid-container">
+            <div class="item2">
+                <div id="Hi">
+                    Hi，{{ userName }}！
+                </div>
+                <el-divider></el-divider>
+                <div>
+                    <el-row>
+                        <el-col>
+                            <el-menu default-active="$route.path" router class="el-menu-vertical-demo" v-open="handleopen" v-close="handleclose">
+                                <el-submenu index="1">
+                                    <template slot="title">
+                                        <i class="el-icon-location"></i>
+                                        <span>个人信息</span>
+                                    </template>
+                                    <el-menu-item-group>
+                                        <el-menu-item index="/one" onclick="window.location.replace('/PersonalPage/perpagestru')">基本信息</el-menu-item>
+                                        <el-menu-item index="/two" v-on:click="changepassword()">修改密码</el-menu-item>
+                                    </el-menu-item-group>
+                                </el-submenu>
+                                <el-menu-item index="2">
+                                    <i class="el-icon-menu"></i>
+                                    <span slot="title">我的机票</span>
+                                </el-menu-item>
+                                <el-menu-item index="3">
+                                    <i class="el-icon-menu"></i>
+                                    <span slot="title">我的行程</span>
+                                </el-menu-item>
+                            </el-menu>
+                        </el-col>
+                    </el-row>
+                </div>
+            </div>
+            <div class="item3">
+                <div>
+                    <h2 id="wel">
+                        <br>
+                        <p id="userid">
+                            账号：{{userID}}
+                        </p>
+                    </h2>
+                    <el-divider></el-divider>
+                    <p id="modify">
+                        <br>
+                        用户名：&nbsp;&nbsp;&nbsp;<input type="text" name="inputname" id="inputname" :value="inputname">
+                        <br><br>
+                        联系电话：<input type="text" name="inputphone" id="inputphone" :value="inputphone">
+                        <br><br>
+                        邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="inputemail" id="inputemail" :value="inputemail">
+                        <br><br>
+                        身份证号：<input type="text" name="inputidcard" id="inputidcard" :value="inputidcard">
+                        <br><br>
+                    </p>
+                    <button class="button3" v-on:click="confirm()">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var url = location.search;
+    var Request = new Object();
+
+    if (url.indexOf("?") != -1) {
+        var str = url.substr(1);
+        strs = str.split("&");
+        for (var i = 0; i < strs.length; i++) {
+            Request[strs[i].split("=")[0]] = decodeURI(strs[i].split("=")[1]);
+        }
+        console.log(Request["userName"]);
+
+    }
+    var app = new Vue({
+        el: "#app",
+        data: {
+            userID: Request["userID"],
+            userName: Request["userName"],
+            inputname: '',
+            inputphone: '',
+            inputemail: '',
+            inputidcard: ''
+        },
+        methods: {
+            handleopen(key, keyPath) {
+                console.log(key, keyPath)
+            },
+            handleclose(key, keyPath) {
+                console.log(key, keyPath)
+            },
+            confirm() {
+                this.inputname = document.getElementById("inputname").value;
+                this.inputphone = document.getElementById("inputphone").value;
+                this.inputemail = document.getElementById("inputemail").value;
+                this.inputidcard = document.getElementById("inputidcard").value;
+                if (this.checkUserName() && this.checkPhoneNumber() && this.checkEmail() && this.checkIdCard())
+                    this.modifyUserinfo();
+            },
+            changepassword: function () {
+                url = "../UserInfo/changepsw?userID=" + encodeURI(this.userID) + "&userName=" + encodeURI(this.userName);
+                window.location.href = url;
+            },
+            modifyUserinfo() {
+                axios.post("/UserInfo/userinfoModify", {
+                    userName: this.inputname, userPhoneNumber: this.inputphone,
+                    userEmail: this.inputemail, userIDcard: this.inputidcard
+                }).then(response => {
+                    var data = JSON.parse(response.data).error_code;
+                    if (data == 0) {
+                        alert('修改成功!');
+                        window.location.replace('/UserInfo/perpagestru');
+                    }
+                    else
+                        alert('修改失败!');
+                })
+                    .catch(error => {
+                        console.log(666);
+                    })
+            },
+            checkUserName() {
+                var reg = /^[\u4e00-\u9fa5]{3,15}$/
+                if (this.inputname == null || this.inputname == "") {
+                    alert("用户名不能为空！");
+                    return false;
+
+                } else if (!reg.test(this.inputname)) {
+                    alert("用户名是3-15个汉字");
+                    return false;
+
+                }
+                return true;
+            },
+
+            checkPhoneNumber() {
+                var reg = /^(13[0-9]|14[5|7]|15[0|1|2|3|4|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9]|19[9])\d{8}$/
+                if (this.inputphone == null || this.inputphone == "") {
+                    alert("手机号不能为空！")
+                    return false;
+                }
+                else if (!reg.test(this.inputphone)) {
+                    alert("手机号不合法！")
+                    return false;
+
+                }
+                return true;
+            },
+
+            checkIdCard() {
+                var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/
+                if (this.inputidcard == null || this.inputidcard == "") {
+                    alert("身份证号不能为空！")
+                    return false;
+
+                } else if (!reg.test(this.inputidcard)) {
+                    alert("身份证号不合法！")
+                    return false;
+
+                } else
+                    return true;
+            },
+            checkEmail() {
+                if (this.inputemail == null || this.inputemail == "") {
+                    alert("邮箱不能为空！")
+                    return false;
+                }
+                return true;
+            }
+        }
+    })
+</script>

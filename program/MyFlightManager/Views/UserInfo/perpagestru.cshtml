@@ -1,0 +1,130 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/css/PersonalPage.css")
+</head>
+
+<div id="app">
+    @RenderPage("~/Views/Flight/HeadBar.cshtml")
+    <div class="elnav">
+        <div class="grid-container">
+            <div class="item2">
+                <div id="Hi">
+                    Hi，{{ userName }}！
+                </div>
+                <el-divider></el-divider>
+                <div>
+                    <el-row>
+                        <el-col>
+                            <el-menu default-active="$route.path" router class="el-menu-vertical-demo" v-open="handleOpen" v-close="handleClose">
+                                <el-submenu index="1">
+                                    <template slot="title">
+                                        <i class="el-icon-location"></i>
+                                        <span>个人信息</span>
+                                    </template>
+                                    <el-menu-item-group>
+                                        <el-menu-item index="/one" onclick="window.location.replace('/UserInfo/perpagestru')">基本信息</el-menu-item>
+                                        <el-menu-item index="/two" v-on:click="changepassword()">修改密码</el-menu-item>
+                                    </el-menu-item-group>
+                                </el-submenu>
+                                <el-menu-item index="2">
+                                    <i class="el-icon-menu"></i>
+                                    <span slot="title">我的机票</span>
+                                </el-menu-item>
+                                <el-menu-item index="3">
+                                    <i class="el-icon-menu"></i>
+                                    <span slot="title">我的行程</span>
+                                </el-menu-item>
+                            </el-menu>
+                        </el-col>
+                    </el-row>
+                </div>
+            </div>
+            <div class="item3">
+                <div id="perInfomation">
+                    <h1 id="wel">
+                        <br />
+                        <p1 id="username">
+                            {{userName}}
+                        </p1>
+                        <br>
+                        <p2 id="userid">
+                            账号：{{userID}}
+                        </p2>
+                    </h1>
+                    <el-divider></el-divider>
+                    <div id="modify">
+                        <br>
+                        联系电话：{{userPhone}}
+                        <br><br>
+                        邮箱：{{userEmail}}
+                        <br><br>
+                        身份证号：{{userIDCard}}
+                        <br><br>
+                    </div>
+                    <button class="button1" v-on:click="changeinfo()">修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            userName: '',
+            userID: '000001',
+            userPhone: '',
+            userEmail: '',
+            userIDCard: ''
+        },
+        methods: {
+            handleOpen(key, keyPath) {
+                console.log(key, keyPath)
+            },
+            handleClose(key, keyPath) {
+                console.log(key, keyPath)
+            },
+            modifyFun: function () {
+                window.location.href = "/UserInfo/changepsw";
+            },
+            changepassword: function () {
+                url = "../UserInfo/changepsw?userID=" + encodeURI(this.userID) + "&userName=" + encodeURI(this.userName);
+                window.location.href = url;
+            },
+            changeinfo: function () {
+                url = "../UserInfo/changeinfo?userID=" + encodeURI(this.userID) + "&userName=" + encodeURI(this.userName);
+                window.location.href = url;
+            }
+        }
+    })
+    function init() {
+        console.log(0);
+        axios.post("/UserInfo/userinfo", {
+        }).then(response => {
+            var data = JSON.parse(response.data).userinfo;
+            app.userID = data.userID;
+            app.userName = data.userName;
+            app.userPhone = data.userPhoneNumber;
+            app.userEmail = data.userEmail;
+            app.userIDCard = data.userIDcard;
+        })
+            .catch(error => {
+                console.log(666);
+            })
+    }
+    window.onload = init;
+</script>
+
+
+

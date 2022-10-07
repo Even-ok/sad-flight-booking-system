@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    @Styles.Render("~/css/style.css")
+    @Styles.Render("~/css/reset.css")
+    <title>AdminLogin</title>
+</head>
+<body oncontextmenu="return false" id="adminLog">
+    <div id="logincontainer">
+        <div id="loginbox">
+            <div class="page-container">
+                <img src="/img/logo.png">
+                <h1>Administrator Login</h1>
+                <form action="" method="post">
+                    <div>
+                        <input type="text" name="username" class="username" placeholder="用户名" autocomplete="off"  value=""/>
+                    </div>
+                    <div>
+                        <input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false"  value=""/>
+                    </div>
+                    <button id="submit" type="button" onclick="adminlogin();">登 录</button>
+                    <br />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="connect">
+        <p>Start your wonderful journey here！</p>
+        <p style="margin-top:20px;">在这里，开启你的美好旅程！</p>
+    </div>
+    <div class="alert" style="display:none">
+        <h2>消息</h2>
+        <div class="alert_con">
+            <p id="ts"></p>
+            <p style="line-height:70px"><a class="btn">确定</a></p>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="~/js/AdminManage.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\obj\Debug\MyFlightManager.csprojAssemblyReference.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\obj\Debug\MyFlightManager.csproj.CoreCompileInputs.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\MyFlightManager.dll.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\MyFlightManager.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\csc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\csc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\csc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\csi.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\csi.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\csi.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.AppContext.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Console.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.IO.Compression.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Net.Http.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.ValueTuple.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\vbc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\vbc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\vbc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Antlr3.Runtime.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\EntityFramework.SqlServer.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\LitJSON.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Newtonsoft.Json.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Oracle.ManagedDataAccess.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Helpers.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Mvc.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Optimization.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.WebPages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\WebGrease.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\EntityFramework.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\EntityFramework.SqlServer.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Helpers.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Mvc.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Optimization.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.WebPages.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Newtonsoft.Json.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Antlr3.Runtime.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\obj\Debug\MyFlightManager.csproj.CopyComplete
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\obj\Debug\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\obj\Debug\MyFlightManager.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\MyFlightManager\bin\Sweet.Jayson.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\MyFlightManager.dll.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\MyFlightManager.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\csc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\csc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\csc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\csi.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\csi.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\csi.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.AppContext.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Console.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.IO.Compression.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Net.Http.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.ValueTuple.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\vbc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\vbc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\vbc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Antlr3.Runtime.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\EntityFramework.SqlServer.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\LitJSON.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Newtonsoft.Json.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Oracle.ManagedDataAccess.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Sweet.Jayson.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Helpers.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Mvc.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Optimization.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.WebPages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\WebGrease.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\EntityFramework.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\EntityFramework.SqlServer.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Helpers.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Mvc.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Optimization.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.WebPages.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Newtonsoft.Json.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Antlr3.Runtime.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\obj\Debug\MyFlightManager.csprojAssemblyReference.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\obj\Debug\MyFlightManager.csproj.CoreCompileInputs.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\obj\Debug\MyFlightManager.csproj.CopyComplete
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\obj\Debug\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\提交文档\Last\MyFlightManager\obj\Debug\MyFlightManager.pdb
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\MyFlightManager.dll.config
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\MyFlightManager.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\MyFlightManager.pdb
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\csc.exe
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\csc.exe.config
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\csc.rsp
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\csi.exe
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\csi.exe.config
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\csi.rsp
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.AppContext.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Console.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.IO.Compression.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Net.Http.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.ValueTuple.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\vbc.exe
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\vbc.exe.config
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\vbc.rsp
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Antlr3.Runtime.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\EntityFramework.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\EntityFramework.SqlServer.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\LitJSON.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Oracle.ManagedDataAccess.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Helpers.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Mvc.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Optimization.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Razor.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.WebPages.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\WebGrease.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\EntityFramework.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\EntityFramework.SqlServer.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Helpers.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Mvc.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Optimization.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.Razor.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.WebPages.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Antlr3.Runtime.pdb
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\obj\Debug\MyFlightManager.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\obj\Debug\MyFlightManager.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\obj\Debug\MyFlightManager.csproj.CopyComplete
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\obj\Debug\MyFlightManager.dll
+C:\Users\lenovo\Desktop\new\MyFlightManager (2)\MyFlightManager\obj\Debug\MyFlightManager.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\MyFlightManager.dll.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\MyFlightManager.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\csc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\csc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\csc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\csi.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\csi.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\csi.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.AppContext.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Console.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.IO.Compression.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Net.Http.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.ValueTuple.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\vbc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\vbc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\vbc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Antlr3.Runtime.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\EntityFramework.SqlServer.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\LitJSON.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Newtonsoft.Json.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Oracle.ManagedDataAccess.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Helpers.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Mvc.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Optimization.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.WebPages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\WebGrease.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\EntityFramework.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\EntityFramework.SqlServer.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Helpers.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Mvc.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Optimization.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.WebPages.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Newtonsoft.Json.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Antlr3.Runtime.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\obj\Debug\MyFlightManager.csprojAssemblyReference.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\obj\Debug\MyFlightManager.csproj.CoreCompileInputs.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\obj\Debug\MyFlightManager.csproj.CopyComplete
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\obj\Debug\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\最终最终\MyFlightManager\obj\Debug\MyFlightManager.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\MyFlightManager.dll.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\MyFlightManager.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\csc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\csc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\csc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\csi.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\csi.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\csi.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.AppContext.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Console.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.IO.Compression.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Net.Http.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.ValueTuple.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\vbc.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\vbc.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\vbc.rsp
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Antlr3.Runtime.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\EntityFramework.SqlServer.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\LitJSON.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Newtonsoft.Json.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Oracle.ManagedDataAccess.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Net.Http.Formatting.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Cors.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Helpers.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Http.Cors.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Http.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Http.WebHost.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Mvc.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Optimization.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.WebPages.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\WebGrease.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\EntityFramework.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\EntityFramework.SqlServer.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Net.Http.Formatting.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Http.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Http.Cors.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Http.WebHost.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Helpers.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Mvc.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Optimization.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.WebPages.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Newtonsoft.Json.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Antlr3.Runtime.pdb
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\obj\Debug\MyFlightManager.csprojAssemblyReference.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\obj\Debug\MyFlightManager.csproj.CoreCompileInputs.cache
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\obj\Debug\MyFlightManager.csproj.CopyComplete
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\obj\Debug\MyFlightManager.dll
+C:\Users\lyw10\Desktop\learning\大二下\数据库课程设计\第20组_1951095_梁伊雯_民航信息管理系统\program\MyFlightManager\obj\Debug\MyFlightManager.pdb

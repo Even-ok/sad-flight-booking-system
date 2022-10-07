@@ -1,0 +1,252 @@
+﻿
+#page {
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background-image: url("../img/backgroundimage.jpg");
+    background-size: cover;
+    z-index: -10;
+    background-position: center 0;
+    width: 100%;
+    height: 100%;
+}
+
+.seatinfo {
+    font-size: 16px;
+    color: rgb(131, 128, 128);
+    margin-top: 0px;
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    bottom: 60px;
+}
+
+li {
+    list-style: none;
+    height: 80px;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #2c3e50;
+    font-family: Arial;
+    text-align: left;
+}
+
+.el-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    padding: 10px;
+    margin-top: 150px;
+    font-size: 30px;
+    font-weight: 900;
+    height: 100px;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial;
+    margin-left: 100px;
+}
+
+.el-footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    font-size: 30px;
+    height: 100px;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial;
+    margin-bottom: 30px;
+}
+
+.el-aside {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.el-main {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+}
+
+.el-container {
+    margin-bottom: 40px;
+}
+
+    .el-container:nth-child(5) .el-aside,
+    .el-container:nth-child(6) .el-aside {
+        line-height: 260px;
+    }
+
+    .el-container:nth-child(7) .el-aside {
+        line-height: 320px;
+    }
+
+button {
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #cc6666;
+    color: white;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.wrapper {
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flight-wrapper {
+    height: 100%;
+    margin-left: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.seat-wrapper {
+    height: 350px;
+    width: 400px;
+    border: 1px dotted #c5c5c5;
+    margin: 0 auto;
+    position: relative;
+    overflow: scroll;
+    margin-left: 180px;
+}
+
+.front {
+    margin: 0 auto;
+    height: 30px;
+    width: 150px;
+    background-color: #e3e3e3;
+    border-radius: 0 0 30px 30px;
+    color: #585858;
+    line-height: 30px;
+    text-align: center;
+}
+
+.inner-seat-wrapper {
+    top: 120px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.seat {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-seat {
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.selected-seat {
+    background: url('../img/selected.png') center center no-repeat;
+    background-size: 80% 80%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.5));
+}
+
+.unselected-seat {
+    background: url('../img/unselected.png') center center no-repeat;
+    background-size: 80% 80%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.5));
+}
+
+.bought-seat {
+    background: url('../img/bought.png') center center no-repeat;
+    background-size: 80% 80%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.5));
+}
+
+.flight-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    top: 50px;
+    background-color: #f6f6f6;
+    color: #636363;
+    border: 1px solid #b1b1b1;
+    height: 50px;
+}
+
+
+.btn-wrapper {
+    margin: 80px auto;
+    width: 500px;
+    height: 30px;
+    text-align: center;
+}
+
+.btn-buy {
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #4862b9;
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: "微软雅黑";
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    .btn-buy:hover { /* 鼠标移入按钮范围时改变颜色 */
+        background: #cc6666;
+    }
+
+
+.illustration {
+    height: 50px;
+    width: 150px;
+}
+
+.illustration-img-wrapper {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 20%;
+    /*display: inline-block;*/
+    transform: translateY(-50%);
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.illustration-text {
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+    font-size: 14px;
+    position: relative;
+    top: -70px;
+    font-weight: bold;
+    color: grey;
+    letter-spacing: 3px;
+    width: 100px;
+}
+
+

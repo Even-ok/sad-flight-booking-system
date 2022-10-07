@@ -1,0 +1,59 @@
+﻿#app {
+	overflow: scroll;
+	overflow-x: hidden;
+	top: 0;
+	left: 0;
+	background-image: url("../img/backgroundimage.jpg");
+	z-index: -10;
+	background-position: center 0;
+	width: 100%;
+	height: 100%;
+}
+
+#building {
+	overflow: scroll;
+	overflow-x: hidden;
+	background-image: url("../img/rec.png");
+	background-size: 83.5% 640px;
+	margin-top: 20px;
+	margin-left: 8%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+#content {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+	margin-top: 21px;
+}
+
+#local_currenttime {
+	margin-left: -13pc;
+	margin-top: 2pc;
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+#jet_lag_table {
+	margin-left: 1pc;
+	margin-top: 18px;
+}
+
+#jet_lag_table input {
+	height: 40px;
+	width: 250px;
+	margin-left: -5pc;
+}
+#resource-page{
+	margin-top:15px;
+	margin-right:200px;
+}
+.el-pagination .btn-prev {
+	padding-right: 12px;
+}
+.el-pagination .btn-next {
+	padding-left: 12px;
+}

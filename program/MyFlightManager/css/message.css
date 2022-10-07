@@ -1,0 +1,166 @@
+﻿#admin {
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    background-image: url("../img/backgroundimage.jpg");
+    background-size: cover;
+    z-index: -10;
+    background-position: center 0;
+    width: 100%;
+    height: 100%;
+}
+.el-dialog .el-dialog__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #admin span {
+        margin: 0px 0px;
+    }
+
+.el-submenu__title i {
+    color: #fff;
+}
+
+.el-menu-item i {
+    color: #fff;
+}
+
+.el-button--primary {
+    color: #FFF;
+    background-color: #4862b9;
+    border-color: #4862b9;
+    text-align: center;
+}
+
+
+#citymes {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+#classmes {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+#flightmes {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+#airlinemes {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+#companymes {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+#planemes {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+#airportmes {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+.el-form {
+    margin-top: 25px;
+}
+
+.el-table {
+    margin-top: 20px;
+}
+
+.el-form .el-form-item .el-input {
+    width: 170px;
+}
+
+.message .el-input {
+    display: none
+}
+
+.message .current-row .el-input {
+    display: block
+}
+
+    .message .current-row .el-input + span {
+        display: none
+    }
+
+.el-table-add-row {
+    margin-top: 10px;
+    width: 100%;
+    height: 34px;
+    border: 1px dashed #c1c1cd;
+    border-radius: 3px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    line-height: 34px;
+}
+.el-input__prefix {
+    left: auto;
+    right: 20px;
+    transition: all .3s;
+}
+
+.el-form-item__label {
+    text-align: left;
+}
+
+.el-dialog__footer {
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+
+.el-dialog__body {
+    padding: 30px 80px;
+}

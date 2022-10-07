@@ -1,0 +1,253 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Schedule";
+}
+
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <script src="~/Scripts/kit.js"></script>
+    <script src="~/Scripts/global.js"></script>
+
+    <script src="~/Scripts/axios.min.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+</head>
+
+
+<div id="guidebar">
+    <ul id="head">
+        <li><img src="~/img/logo.png"></li>
+        <li><a href="http://www.baidu.com"><span>首页</span></a></li>
+        <li><a href="http://www.baidu.com" ><span>航班信息</span></a></li>
+        <li><a href="http://www.baidu.com" ><span>机票管理</span></a></li>
+        <li><span>|</span></li>
+        <li><a href="http://www.baidu.com" ><span>机票管理</span></a></li>
+        <li>
+            <a href="http://www.baidu.com" >
+                <div class="dropdown">
+                    <span>我的主页</span>
+                    <div class="dropdown-content">
+                        <ul id="menu">
+                            <li id="menu"><a href="http://www.baidu.com">个人中心</a></li>
+                            <li id="menu"><a href="http://www.baidu.com" >我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li><a href="http://www.baidu.com" ><span>消息</span></a></li>
+        <li><a href="http://www.baidu.com" ><span>反馈</span></a></li>
+    </ul>
+</div>
+
+
+<body background="~/img/backgroundimage.jpg" style=" background-repeat:no-repeat ;background-size:cover;background-attachment: fixed;">
+    <div id="bk2">
+        <div style="height:5px"></div>
+            <h2 id="tip">反馈</h2>
+
+        <div class="t1">
+        <textarea id="fd" placeholder="反馈内容.."></textarea>
+        </div>
+        <br>
+        <div class="t2">
+            <textarea id="ho" placeholder="期望要求.."></textarea>
+        </div>
+        <div class="b1">
+            <el-button id="btn" type="info" v-on:click="add_feedback()">提交</el-button>
+        </div>
+        <script type="text/javascript">
+            var bk2 = new Vue({
+                el: "#bk2",
+                data: {},
+                methods: {
+                    add_feedback: function () {
+                        axios.post("/feedback/addFeedBack", {
+                            fd: document.getElementById("fd").value,
+                            ho: document.getElementById("ho").value
+                        })
+                            .then(response => {
+                                var error_code = JSON.parse(response.data)
+                                console.log(error_code.error_code);
+                            })
+                            .catch(error => {
+                                console.log(666);
+                            })
+                    }
+                }
+            })
+        </script>
+    </div>
+</body>
+    <style>
+        #guidebar {
+            background-color: white;
+            height: 120px;
+            min-width: 1024px;
+        }
+
+        #head {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+            #head ul {
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-align: center;
+                color: #2c3e50;
+                background-color: white;
+            }
+
+            #head li {
+                margin-top: 20px;
+                margin-left: 10px;
+                list-style: none;
+                float: left;
+                line-height: 100px;
+            }
+
+                #head li:hover a {
+                    color: lightblue;
+                }
+
+            #head span {
+                margin: 0 20px;
+            }
+
+        a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        #menu ul {
+            font-family: 'Avenir', Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: left;
+            color: #2c3e50;
+            background-color: white;
+        }
+
+        #menu li {
+            margin-top: 10px;
+            margin-left: 0;
+            list-style: none;
+            float: left;
+            line-height: 20px;
+        }
+
+            #menu li:hover a {
+                color: #f37bcb;
+            }
+
+        .el-menu-demo {
+            text-align: center;
+        }
+
+        .dropdown {
+            z-index: 99;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            color: black;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #searchbox {
+            margin-top: 30px;
+            background-image: url("../../img/rec.png");
+            background-position: top;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 800px;
+           
+        }
+
+       
+
+            input[type=submit]:hover {
+                background-color: #cc6666;
+            }
+
+
+        #bk2 {
+            position: center;
+            top: 100px;
+            background: white;
+            border-radius:10px;
+            height:500px;
+            margin-left:350px;
+            width:800px;
+            margin-right:300px;
+            margin-top:50px;
+            opacity:0.92;
+        }
+        #tip{
+            text-align:center;
+            margin-top:50px;
+            border-radius:30px;
+            border-width:2px;
+        }
+
+
+
+        .t1{
+            margin-top:5px;
+            margin:auto;
+            width:60%;
+        }
+        #fd {
+            margin-top: 5px;
+            border-width: 1px;
+            border-radius: 10px;
+            width: 500px;
+            height: 150px;
+            resize: none;
+            font-size: 15px;
+            border-color: lightgrey;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .12);
+            outline:none;
+        }
+
+        .t2 {
+            margin: auto;
+            width: 60%;
+        }
+        #ho {
+            border-width: 1px;
+            border-radius: 10px;
+            width: 500px;
+            height: 150px;
+            resize: none;
+            font-size: 15px;
+            border-color: lightgrey;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+            outline: none;
+        }
+
+
+        .b1 {
+            margin: auto;
+            margin-top:10px;
+            width: 15%;
+        }
+      
+    </style>

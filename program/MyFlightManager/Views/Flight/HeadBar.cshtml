@@ -1,0 +1,68 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/css/head.css")
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <style>
+        body{
+            padding-top:0px;
+        }
+    </style>
+
+</head>
+<html>
+<body>
+    <!--<div id='app'>-->
+    <!--<img src="./assets/rec.png">-->
+    <!--<div id="content">-->
+    <div id="guidebar">
+        <ul id="head">
+            <li><img src="~/img/logo.png"></li>
+            <li><a href="../Flight/Index" ><span>首页</span></a></li>
+            <li><a href="../Flight/displayFlight" ><span>航班信息</span></a></li>
+            <li><a href="../Ticket/books" ><span>机票管理</span></a></li>
+            <li><span>|</span></li>
+            <li><a href="../UserInfo/perpagestru"><span>我的主页</span></a></li>
+            <li><a href="../Message/message"><span>消息</span></a></li>
+            <li><a href="../UserInfo/feedback"><span>反馈</span></a></li>
+            <li><a href="../Flight/showJatlag"><span>附加服务</span></a></li>
+        </ul>
+        <ul id="head2">
+            <li><a href="javascript:;" onclick="exit()" style=""><span>退出</span></a></li>
+        </ul>
+    </div>
+    <!--</div>-->
+    <!--</div>-->
+
+</body>
+<script>
+    function exit() {
+        if (confirm("确定退出系统？")) {
+            $.ajax({
+                url: "/AccountManager/UserLogOff",
+                async: false,
+                type: 'post',
+                traditional: true,
+                success: function (data) {
+                    var data = eval("(" + data + ")");
+                    var FLAG = data.state;
+                    if (FLAG == 1) {
+                        
+                        alert('退出成功！');
+                        window.location.replace('../mylogin.html');
+                    }
+                }
+            })
+        }
+    }
+</script>
+</html>
+
+

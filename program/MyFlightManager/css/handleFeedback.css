@@ -1,0 +1,133 @@
+﻿#bk h2 {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #515151;
+}
+
+#admin {
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    background-image: url("../img/backgroundimage.jpg");
+    background-size: cover;
+    z-index: -10;
+    background-position: center 0;
+    width: 100%;
+    height: 100%;
+}
+
+#grid-content bg-purple ul {
+    float: left;
+}
+
+#fb {
+    width: 100%;
+    height: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row-bg {
+    padding: 0 0;
+    background-color: #f9fafc;
+}
+
+.list li {
+    height: 50px;
+    list-style-type: none;
+}
+
+.t1 {
+    margin-top: 5px;
+    margin: auto;
+    width: 60%;
+}
+
+    .t1 textarea {
+        border-radius: 4px;
+        max-width: none;
+        border: 0px;
+        background-color: #eee;
+    }
+
+#fd {
+    margin-top: 30px;
+    margin-left: 0px;
+    border-width: 1px;
+    border-radius: 4px;
+    width: 350px;
+    height: 250px;
+    resize: none;
+    font-size: 15px;
+    border-color: lightgrey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .12);
+    outline: none;
+}
+
+#btn {
+    margin-left: auto;
+    margin-top: 30px;
+    width: 110px;
+    height: 40px;
+    background-color: #4862b9;
+    border-color: #4862b9;
+}
+
+    #btn > p {
+        padding: 0px;
+    }
+
+    #btn > span {
+        height: 0px;
+    }
+
+#list {
+    padding: 0px;
+}
+
+.el-aside {
+    margin-left: 80px;
+    text-align: left;
+    padding: 40px 0px 20px 20px;
+    width: 350px;
+}
+
+.el-main {
+    padding: 40px 20px 20px 20px;
+}
+
+body {
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.item2 {
+    grid-area: menu;
+    background-color: white;
+    border-radius: 8px;
+    width: 550px;
+}
+
+.item3 {
+    grid-area: main;
+    background-color: white;
+    border-radius: 8px;
+    width: 550px;
+    height: 550px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'menu main ';
+    grid-gap: 20px;
+    background-color: rgba(245, 238, 238, 0.7);
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 160px;
+    margin-right: 130px;
+    border-radius: 8px;
+    width: 75%;
+}

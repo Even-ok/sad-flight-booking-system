@@ -1,0 +1,32 @@
+﻿#scotchback {
+    min-width: 1220px;
+    height: 100%;
+    margin-left: 163px;
+    margin-right: 153px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+.el-container {
+    height: 100%;
+}
+
+.el-aside {
+    background-color: #4862b9;
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    border: 0;
+}
+
+.el-main {
+    color: black;
+    text-align: left;
+    line-height: 20px;
+}
+
+.el-menu {
+    background-color: #d3dce6
+}

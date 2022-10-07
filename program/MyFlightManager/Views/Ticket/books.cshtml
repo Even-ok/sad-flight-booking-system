@@ -1,0 +1,130 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "books";
+}
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <script src="~/Scripts/axios.min.js"></script>
+    @Styles.Render("~/css/books.css")
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+</head>
+
+<body background="~/img/backgroundimage.jpg" style=" background-repeat:no-repeat ;background-size:cover;background-attachment: fixed;">
+    <div id='app'>
+        @RenderPage("~/Views/Flight/HeadBar.cshtml")
+        <div id="bk">
+            <div class="grid-container">
+                <div class="item2">
+                    <div id="subtitle">
+                        机票订单
+                    </div>
+                    <el-divider></el-divider>
+                    <div id="menubody">
+                        <el-menu router :default-active="activeIndex" class="el-menu-vertical-demo" v-open="handleOpen" v-close="handleClose">
+                            <el-submenu index="1">
+                                <template slot="title">
+                                    我的订单
+                                </template>
+                                <el-menu-item>机票订单</el-menu-item>
+                                <el-menu-item v-on:click="changePage()">我的行程</el-menu-item>
+                            </el-submenu>
+                        </el-menu>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div id="mydd">
+                        <div class="timeblock">
+                            <span class="demonstration">订单日期</span>
+                            <el-date-picker v-model="value6"
+                                            type="daterange"
+                                            range-separator="至"
+                                            start-placeholder="开始日期"
+                                            end-placeholder="结束日期"
+                                            style="width: 400px;">
+                            </el-date-picker>
+                            <span style="margin-left: 100px;">
+                                <el-button fill="#4862b9" type="primary" plain v-on:click="booksQuery" style="background:#4862b9;color:#fff;border:none;">查询订单</el-button>
+                            </span>
+                        </div>
+                        <div>
+                            <el-table ref="filterTable"
+                                      :data="tableData"
+                                      max-height="480"
+                                      :header-cell-style="{background:'#4862b9',
+                                    color:'white',
+                                    border: 'solid 1px white'
+                                    }"
+                                      style="width: 90%; margin-top:50px; margin-left:70px;">
+                                <el-table-column type="expand">
+                                    <template slot-scope="props">
+                                        <el-form label-position="left" inline class="demo-table-expand">
+                                            <el-form-item label="机票  ID">
+                                                <span>{{ props.row.ticket_ID }}</span>
+                                            </el-form-item>
+                                            <el-form-item label="航空公司">
+                                                <span>{{ props.row.company_name }}</span>
+                                            </el-form-item>
+                                            <el-form-item label="出发城市">
+                                                <span>{{ props.row.departCity }}</span>
+                                            </el-form-item>
+                                            <el-form-item label="到达城市">
+                                                <span>{{ props.row.arriveCity }}</span>
+                                            </el-form-item>
+                                            <el-form-item label="机票价格">
+                                                <span>{{ props.row.price }}</span>
+                                            </el-form-item>
+                                            <el-form-item label="舱位等级">
+                                                <span>{{ props.row.seat_class }}</span>
+                                            </el-form-item>
+                                            <el-form-item label="座位">
+                                                <span>{{ props.row.seat }}</span>
+                                            </el-form-item>
+                                            <el-form-item label="操作">
+                                                <span class="caozuo"><el-button type="text" v-on:click="cancel(props.row.ticket_ID)">退订  </el-button></span>
+                                                <span class="caozuo"><el-button type="text" v-on:click="change(props.row.ticket_ID,props.row.state)">改签  </el-button></span>
+                                                <span class="caozuo"><el-button type="text" v-on:click="chooseSeat(props.row.ticket_ID, props.row.seat, props.row.state)">选座  </el-button></span>
+                                            </el-form-item>
+                                        </el-form>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="flight_number"
+                                                 label="航班号"
+                                                 width="150">
+                                </el-table-column>
+                                <el-table-column prop="departDate"
+                                                 label="出发日期"
+                                                 width="170">
+                                </el-table-column>
+                                <el-table-column prop="airline"
+                                                 label="航线"
+                                                 width="170">
+                                </el-table-column>
+                                <el-table-column prop="passenger_name"
+                                                 label="乘客姓名"
+                                                 width="130">
+                                </el-table-column>
+                                <el-table-column prop="state"
+                                                 label="机票状态"
+                                                 width="150"
+                                                 :filters="[{ text: '改签', value: '改签' }, { text: '未出行', value: '未出行' }, { text: '退订', value: '退订' }]"
+                                                 :filter-method="filterTag"
+                                                 :filter-multiple="false">
+                                    <template slot-scope="scope">
+                                        <el-tag disable-transitions>{{scope.row.state}}</el-tag>
+                                    </template>
+                                </el-table-column>
+                            </el-table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+<script src="~/js/books.js"></script>
+

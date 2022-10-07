@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="18.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ADMIN_ACCOUNT">
+    <Key>
+      <PropertyRef Name="ADMIN_ID" />
+    </Key>
+    <Property Name="ADMIN_ID" Type="varchar2" MaxLength="6" Nullable="false" />
+    <Property Name="ADMIN_STATE" Type="number" Precision="1" Scale="0" />
+    <Property Name="ADMIN_PASSWORD" Type="varchar2" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="AIRLINE">
+    <Key>
+      <PropertyRef Name="AIRLINE_ID" />
+    </Key>
+    <Property Name="AIRLINE_ID" Type="number" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="MILEAGE" Type="number" Precision="6" Scale="0" />
+    <Property Name="AIRLINE_NAME" Type="varchar2" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="AIRLINE_COMPANY">
+    <Key>
+      <PropertyRef Name="COMPANY_ID" />
+    </Key>
+    <Property Name="COMPANY_ID" Type="varchar2" MaxLength="3" Nullable="false" />
+    <Property Name="COMPANY_NAME" Type="varchar2" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AIRPLANE">
+    <Key>
+      <PropertyRef Name="AIRPLANE_ID" />
+    </Key>
+    <Property Name="AIRPLANE_ID" Type="number" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="COMPANY_ID" Type="varchar2" MaxLength="3" />
+    <Property Name="AIRPLANE_STATE" Type="number" Precision="6" Scale="0" />
+    <Property Name="MODEL_NO" Type="varchar2" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="AIRPORT">
+    <Key>
+      <PropertyRef Name="AIRPORT_ID" />
+    </Key>
+    <Property Name="AIRPORT_ID" Type="varchar2" MaxLength="3" Nullable="false" />
+    <Property Name="CITY_ID" Type="varchar2" MaxLength="4" />
+    <Property Name="AIRPORT_NAME" Type="varchar2" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="ARRIVES">
+    <Key>
+      <PropertyRef Name="AIRLINE_ID" />
+    </Key>
+    <Property Name="AIRLINE_ID" Type="number" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="AIRPORT_ID" Type="varchar2" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="CANCELS">
+    <Key>
+      <PropertyRef Name="TICKET_ID" />
+    </Key>
+    <Property Name="CANCELS_TIME" Type="timestamp" Precision="6" />
+    <Property Name="TICKET_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar2" MaxLength="20" />
+    <Property Name="CANCELS_SURCHARGE" Type="number" Precision="6" Scale="0" />
+  </EntityType>
+  <EntityType Name="CHANGES">
+    <Key>
+      <PropertyRef Name="TICKET_ID" />
+    </Key>
+    <Property Name="CHANGES_TIME" Type="timestamp" Precision="6" />
+    <Property Name="TICKET_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar2" MaxLength="20" />
+    <Property Name="CHANGES_SURCHARGE" Type="number" Precision="6" Scale="0" />
+  </EntityType>
+  <EntityType Name="CITY">
+    <Key>
+      <PropertyRef Name="CITY_ID" />
+    </Key>
+    <Property Name="CITY_ID" Type="varchar2" MaxLength="4" Nullable="false" />
+    <Property Name="CITY_NAME" Type="varchar2" MaxLength="20" />
+    <Property Name="COUNTRY" Type="varchar2" MaxLength="20" />
+    <Property Name="COV19_RISK" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="DEPARTS">
+    <Key>
+      <PropertyRef Name="AIRLINE_ID" />
+    </Key>
+    <Property Name="AIRLINE_ID" Type="number" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="AIRPORT_ID" Type="varchar2" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="FEEDBACK">
+    <Key>
+      <PropertyRef Name="FEEDBACK_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="varchar2" MaxLength="20" />
+    <Property Name="FEEDBACK_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+    <Property Name="FEEDBACK_TIME" Type="timestamp" Precision="6" />
+    <Property Name="FEEDBACK_CONTENT" Type="varchar2" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="FEEDBACK_ANSWER">
+    <Key>
+      <PropertyRef Name="DEALT_ID" />
+    </Key>
+    <Property Name="ADMIN_ID" Type="varchar2" MaxLength="6" />
+    <Property Name="FEEDBACK_ID" Type="varchar2" MaxLength="32" />
+    <Property Name="DEALT_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+    <Property Name="ANSWER_CONTENT" Type="varchar2" MaxLength="500" />
+    <Property Name="ANSWER_TIME" Type="timestamp" Precision="6" />
+  </EntityType>
+  <EntityType Name="FLIGHT">
+    <Key>
+      <PropertyRef Name="FLIGHT_NUMBER" />
+      <PropertyRef Name="DEPART_DATE" />
+    </Key>
+    <Property Name="FLIGHT_NUMBER" Type="varchar2" MaxLength="6" Nullable="false" />
+    <Property Name="AIRPLANE_ID" Type="number" Precision="6" Scale="0" />
+    <Property Name="DEPART_DATE" Type="date" Nullable="false" />
+    <Property Name="ARRIVE_DATE" Type="date" />
+    <Property Name="FLIGHT_STATE" Type="varchar2" MaxLength="10" />
+    <Property Name="AIRLINE_ID" Type="number" Precision="6" Scale="0" />
+    <Property Name="COMPANY_NAME" Type="varchar2" MaxLength="20" />
+    <Property Name="FIRST_CLASS_PRICE" Type="number" Precision="6" Scale="0" />
+    <Property Name="ECONOMY_CLASS_PRICE" Type="number" Precision="6" Scale="0" />
+  </EntityType>
+  <EntityType Name="MESSAGE">
+    <Key>
+      <PropertyRef Name="MESSAGE_ID" />
+    </Key>
+    <Property Name="MESSAGE_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar2" MaxLength="20" />
+    <Property Name="MESSAGE_CONTENT" Type="varchar2" MaxLength="500" />
+    <Property Name="MESSAGE_TIME" Type="date" />
+  </EntityType>
+  <EntityType Name="PLANE_TICKET">
+    <Key>
+      <PropertyRef Name="TICKET_ID" />
+    </Key>
+    <Property Name="TICKET_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+    <Property Name="FLIGHT_NUMBER" Type="varchar2" MaxLength="6" />
+    <Property Name="FLIGHT_DATE" Type="date" />
+    <Property Name="PRICE" Type="number" Precision="6" Scale="0" />
+    <Property Name="FLIGHT_CLASS" Type="varchar2" MaxLength="10" />
+    <Property Name="PASSENGER_NAME" Type="varchar2" MaxLength="10" />
+    <Property Name="TICKET_STATE" Type="varchar2" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="PURCHASES">
+    <Key>
+      <PropertyRef Name="TICKET_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="varchar2" MaxLength="20" />
+    <Property Name="PURCHASE_TIME" Type="timestamp" Precision="6" />
+    <Property Name="TICKET_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SEAT">
+    <Key>
+      <PropertyRef Name="AIRPLANE_ID" />
+      <PropertyRef Name="FLIGHT_CLASS" />
+    </Key>
+    <Property Name="AIRPLANE_ID" Type="number" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="FLIGHT_CLASS" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ROW_SUM" Type="number" Precision="3" Scale="0" />
+    <Property Name="COLUMN_SUM" Type="number" Precision="3" Scale="0" />
+  </EntityType>
+  <EntityType Name="TIME_DIFFERENCE">
+    <Key>
+      <PropertyRef Name="COUNTRY" />
+      <PropertyRef Name="CITY_NAME" />
+    </Key>
+    <Property Name="COUNTRY" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="CITY_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="TIME_DIFFERENCE" Type="number" Precision="3" Scale="0" />
+  </EntityType>
+  <EntityType Name="USER_ACCOUNT">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="USER_NAME" Type="varchar2" MaxLength="20" />
+    <Property Name="USER_PASSWORD" Type="varchar2" MaxLength="20" />
+    <Property Name="PHONE_NUMBER" Type="number" Precision="20" Scale="0" />
+    <Property Name="USER_EMAIL" Type="varchar2" MaxLength="20" />
+    <Property Name="USER_IDCARD" Type="varchar2" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="USER_SEAT">
+    <Key>
+      <PropertyRef Name="TICKET_ID" />
+    </Key>
+    <Property Name="TICKET_ID" Type="varchar2" MaxLength="32" Nullable="false" />
+    <Property Name="SEAT_ROW" Type="number" Precision="2" Scale="0" />
+    <Property Name="SEAT_COL" Type="varchar2" MaxLength="1" />
+  </EntityType>
+  <Association Name="SYS_C007826">
+    <End Role="AIRLINE_COMPANY" Type="Self.AIRLINE_COMPANY" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AIRPLANE" Type="Self.AIRPLANE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AIRLINE_COMPANY">
+        <PropertyRef Name="COMPANY_ID" />
+      </Principal>
+      <Dependent Role="AIRPLANE">
+        <PropertyRef Name="COMPANY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007828">
+    <End Role="AIRPLANE" Type="Self.AIRPLANE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FLIGHT" Type="Self.FLIGHT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AIRPLANE">
+        <PropertyRef Name="AIRPLANE_ID" />
+      </Principal>
+      <Dependent Role="FLIGHT">
+        <PropertyRef Name="AIRPLANE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007829">
+    <End Role="AIRLINE" Type="Self.AIRLINE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FLIGHT" Type="Self.FLIGHT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AIRLINE">
+        <PropertyRef Name="AIRLINE_ID" />
+      </Principal>
+      <Dependent Role="FLIGHT">
+        <PropertyRef Name="AIRLINE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007832">
+    <End Role="CITY" Type="Self.CITY" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AIRPORT" Type="Self.AIRPORT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CITY">
+        <PropertyRef Name="CITY_ID" />
+      </Principal>
+      <Dependent Role="AIRPORT">
+        <PropertyRef Name="CITY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007834">
+    <End Role="AIRPORT" Type="Self.AIRPORT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DEPARTS" Type="Self.DEPARTS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AIRPORT">
+        <PropertyRef Name="AIRPORT_ID" />
+      </Principal>
+      <Dependent Role="DEPARTS">
+        <PropertyRef Name="AIRPORT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007835">
+    <End Role="AIRLINE" Type="Self.AIRLINE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DEPARTS" Type="Self.DEPARTS" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="AIRLINE">
+        <PropertyRef Name="AIRLINE_ID" />
+      </Principal>
+      <Dependent Role="DEPARTS">
+        <PropertyRef Name="AIRLINE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007837">
+    <End Role="AIRPORT" Type="Self.AIRPORT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ARRIVES" Type="Self.ARRIVES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AIRPORT">
+        <PropertyRef Name="AIRPORT_ID" />
+      </Principal>
+      <Dependent Role="ARRIVES">
+        <PropertyRef Name="AIRPORT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007838">
+    <End Role="AIRLINE" Type="Self.AIRLINE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ARRIVES" Type="Self.ARRIVES" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="AIRLINE">
+        <PropertyRef Name="AIRLINE_ID" />
+      </Principal>
+      <Dependent Role="ARRIVES">
+        <PropertyRef Name="AIRLINE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007842">
+    <End Role="FLIGHT" Type="Self.FLIGHT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PLANE_TICKET" Type="Self.PLANE_TICKET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FLIGHT">
+        <PropertyRef Name="FLIGHT_NUMBER" />
+        <PropertyRef Name="DEPART_DATE" />
+      </Principal>
+      <Dependent Role="PLANE_TICKET">
+        <PropertyRef Name="FLIGHT_NUMBER" />
+        <PropertyRef Name="FLIGHT_DATE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007844">
+    <End Role="USER_ACCOUNT" Type="Self.USER_ACCOUNT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PURCHASES" Type="Self.PURCHASES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER_ACCOUNT">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="PURCHASES">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007845">
+    <End Role="PLANE_TICKET" Type="Self.PLANE_TICKET" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PURCHASES" Type="Self.PURCHASES" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PLANE_TICKET">
+        <PropertyRef Name="TICKET_ID" />
+      </Principal>
+      <Dependent Role="PURCHASES">
+        <PropertyRef Name="TICKET_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007847">
+    <End Role="PLANE_TICKET" Type="Self.PLANE_TICKET" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CANCELS" Type="Self.CANCELS" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PLANE_TICKET">
+        <PropertyRef Name="TICKET_ID" />
+      </Principal>
+      <Dependent Role="CANCELS">
+        <PropertyRef Name="TICKET_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007848">
+    <End Role="USER_ACCOUNT" Type="Self.USER_ACCOUNT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CANCELS" Type="Self.CANCELS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER_ACCOUNT">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="CANCELS">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007850">
+    <End Role="PLANE_TICKET" Type="Self.PLANE_TICKET" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CHANGES" Type="Self.CHANGES" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PLANE_TICKET">
+        <PropertyRef Name="TICKET_ID" />
+      </Principal>
+      <Dependent Role="CHANGES">
+        <PropertyRef Name="TICKET_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007851">
+    <End Role="USER_ACCOUNT" Type="Self.USER_ACCOUNT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CHANGES" Type="Self.CHANGES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER_ACCOUNT">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="CHANGES">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007853">
+    <End Role="AIRPLANE" Type="Self.AIRPLANE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SEAT" Type="Self.SEAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AIRPLANE">
+        <PropertyRef Name="AIRPLANE_ID" />
+      </Principal>
+      <Dependent Role="SEAT">
+        <PropertyRef Name="AIRPLANE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007855">
+    <End Role="USER_ACCOUNT" Type="Self.USER_ACCOUNT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MESSAGE" Type="Self.MESSAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER_ACCOUNT">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="MESSAGE">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007857">
+    <End Role="USER_ACCOUNT" Type="Self.USER_ACCOUNT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FEEDBACK" Type="Self.FEEDBACK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER_ACCOUNT">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="FEEDBACK">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007859">
+    <End Role="FEEDBACK" Type="Self.FEEDBACK" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FEEDBACK_ANSWER" Type="Self.FEEDBACK_ANSWER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FEEDBACK">
+        <PropertyRef Name="FEEDBACK_ID" />
+      </Principal>
+      <Dependent Role="FEEDBACK_ANSWER">
+        <PropertyRef Name="FEEDBACK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007860">
+    <End Role="ADMIN_ACCOUNT" Type="Self.ADMIN_ACCOUNT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FEEDBACK_ANSWER" Type="Self.FEEDBACK_ANSWER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ADMIN_ACCOUNT">
+        <PropertyRef Name="ADMIN_ID" />
+      </Principal>
+      <Dependent Role="FEEDBACK_ANSWER">
+        <PropertyRef Name="ADMIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C007863">
+    <End Role="PLANE_TICKET" Type="Self.PLANE_TICKET" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="USER_SEAT" Type="Self.USER_SEAT" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PLANE_TICKET">
+        <PropertyRef Name="TICKET_ID" />
+      </Principal>
+      <Dependent Role="USER_SEAT">
+        <PropertyRef Name="TICKET_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="ADMIN_ACCOUNT" EntityType="Self.ADMIN_ACCOUNT" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="AIRLINE" EntityType="Self.AIRLINE" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="AIRLINE_COMPANY" EntityType="Self.AIRLINE_COMPANY" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="AIRPLANE" EntityType="Self.AIRPLANE" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="AIRPORT" EntityType="Self.AIRPORT" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="ARRIVES" EntityType="Self.ARRIVES" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="CANCELS" EntityType="Self.CANCELS" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="CHANGES" EntityType="Self.CHANGES" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="CITY" EntityType="Self.CITY" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="DEPARTS" EntityType="Self.DEPARTS" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="FEEDBACK" EntityType="Self.FEEDBACK" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="FEEDBACK_ANSWER" EntityType="Self.FEEDBACK_ANSWER" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="FLIGHT" EntityType="Self.FLIGHT" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="MESSAGE" EntityType="Self.MESSAGE" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="PLANE_TICKET" EntityType="Self.PLANE_TICKET" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="PURCHASES" EntityType="Self.PURCHASES" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="SEAT" EntityType="Self.SEAT" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="TIME_DIFFERENCE" EntityType="Self.TIME_DIFFERENCE" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="USER_ACCOUNT" EntityType="Self.USER_ACCOUNT" Schema="C##DATABASE2" store:Type="Tables" />
+    <EntitySet Name="USER_SEAT" EntityType="Self.USER_SEAT" Schema="C##DATABASE2" store:Type="Tables" />
+    <AssociationSet Name="SYS_C007826" Association="Self.SYS_C007826">
+      <End Role="AIRLINE_COMPANY" EntitySet="AIRLINE_COMPANY" />
+      <End Role="AIRPLANE" EntitySet="AIRPLANE" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007828" Association="Self.SYS_C007828">
+      <End Role="AIRPLANE" EntitySet="AIRPLANE" />
+      <End Role="FLIGHT" EntitySet="FLIGHT" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007829" Association="Self.SYS_C007829">
+      <End Role="AIRLINE" EntitySet="AIRLINE" />
+      <End Role="FLIGHT" EntitySet="FLIGHT" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007832" Association="Self.SYS_C007832">
+      <End Role="CITY" EntitySet="CITY" />
+      <End Role="AIRPORT" EntitySet="AIRPORT" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007834" Association="Self.SYS_C007834">
+      <End Role="AIRPORT" EntitySet="AIRPORT" />
+      <End Role="DEPARTS" EntitySet="DEPARTS" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007835" Association="Self.SYS_C007835">
+      <End Role="AIRLINE" EntitySet="AIRLINE" />
+      <End Role="DEPARTS" EntitySet="DEPARTS" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007837" Association="Self.SYS_C007837">
+      <End Role="AIRPORT" EntitySet="AIRPORT" />
+      <End Role="ARRIVES" EntitySet="ARRIVES" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007838" Association="Self.SYS_C007838">
+      <End Role="AIRLINE" EntitySet="AIRLINE" />
+      <End Role="ARRIVES" EntitySet="ARRIVES" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007842" Association="Self.SYS_C007842">
+      <End Role="FLIGHT" EntitySet="FLIGHT" />
+      <End Role="PLANE_TICKET" EntitySet="PLANE_TICKET" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007844" Association="Self.SYS_C007844">
+      <End Role="USER_ACCOUNT" EntitySet="USER_ACCOUNT" />
+      <End Role="PURCHASES" EntitySet="PURCHASES" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007845" Association="Self.SYS_C007845">
+      <End Role="PLANE_TICKET" EntitySet="PLANE_TICKET" />
+      <End Role="PURCHASES" EntitySet="PURCHASES" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007847" Association="Self.SYS_C007847">
+      <End Role="PLANE_TICKET" EntitySet="PLANE_TICKET" />
+      <End Role="CANCELS" EntitySet="CANCELS" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007848" Association="Self.SYS_C007848">
+      <End Role="USER_ACCOUNT" EntitySet="USER_ACCOUNT" />
+      <End Role="CANCELS" EntitySet="CANCELS" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007850" Association="Self.SYS_C007850">
+      <End Role="PLANE_TICKET" EntitySet="PLANE_TICKET" />
+      <End Role="CHANGES" EntitySet="CHANGES" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007851" Association="Self.SYS_C007851">
+      <End Role="USER_ACCOUNT" EntitySet="USER_ACCOUNT" />
+      <End Role="CHANGES" EntitySet="CHANGES" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007853" Association="Self.SYS_C007853">
+      <End Role="AIRPLANE" EntitySet="AIRPLANE" />
+      <End Role="SEAT" EntitySet="SEAT" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007855" Association="Self.SYS_C007855">
+      <End Role="USER_ACCOUNT" EntitySet="USER_ACCOUNT" />
+      <End Role="MESSAGE" EntitySet="MESSAGE" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007857" Association="Self.SYS_C007857">
+      <End Role="USER_ACCOUNT" EntitySet="USER_ACCOUNT" />
+      <End Role="FEEDBACK" EntitySet="FEEDBACK" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007859" Association="Self.SYS_C007859">
+      <End Role="FEEDBACK" EntitySet="FEEDBACK" />
+      <End Role="FEEDBACK_ANSWER" EntitySet="FEEDBACK_ANSWER" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007860" Association="Self.SYS_C007860">
+      <End Role="ADMIN_ACCOUNT" EntitySet="ADMIN_ACCOUNT" />
+      <End Role="FEEDBACK_ANSWER" EntitySet="FEEDBACK_ANSWER" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C007863" Association="Self.SYS_C007863">
+      <End Role="PLANE_TICKET" EntitySet="PLANE_TICKET" />
+      <End Role="USER_SEAT" EntitySet="USER_SEAT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

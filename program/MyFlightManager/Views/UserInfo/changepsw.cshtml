@@ -1,0 +1,146 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/css/Personalpage.css")
+</head>
+
+<div id="app">
+    @RenderPage("~/Views/Flight/HeadBar.cshtml")
+    <div class="elnav">
+        <div class="grid-container">
+            <div class="item2">
+                <div id="Hi">
+                    Hi，{{ userName }}！
+                </div>
+                <el-divider></el-divider>
+                <div>
+                    <el-row>
+                        <el-col>
+                            <el-menu default-active="$route.path" router class="el-menu-vertical-demo" v-open="handleOpen" v-close="handleClose">
+                                <el-submenu index="1">
+                                    <template slot="title">
+                                        <i class="el-icon-location"></i>
+                                        <span>个人信息</span>
+                                    </template>
+                                    <el-menu-item-group>
+                                        <el-menu-item index="/one" onclick="window.location.replace('/UserInfo/perpagestru')">基本信息</el-menu-item>
+                                        <el-menu-item index="/two" v-on:click="changepassword()">修改密码</el-menu-item>
+                                    </el-menu-item-group>
+                                </el-submenu>
+  
+                            </el-menu>
+                        </el-col>
+                    </el-row>
+                </div>
+            </div>
+            <div class="item3">
+                <div>
+                    <br>
+                    <h id="twotitle">修改密码</h>
+                    <el-divider></el-divider>
+                    <div id="changepsw">
+                        <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+                            <el-form-item label="请输入旧密码" prop="oldpass">
+                                <el-input type="password" v-model="ruleForm.oldpass" autocomplete="off"></el-input>
+                            </el-form-item>
+                            <el-form-item label="请设置新密码" prop="pass">
+                                <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
+                            </el-form-item>
+                            <el-form-item label="请确认新密码" prop="checkPass">
+                                <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
+                            </el-form-item>
+                            <el-form-item>
+                                <el-button type="primary" v-on:click="submitForm('ruleForm')" style="background:#4862b9;">提交</el-button>
+                                <el-button v-on:click="resetForm('ruleForm')">重置</el-button>
+                            </el-form-item>
+                        </el-form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var url = location.search;
+    var Request = new Object();
+
+    if (url.indexOf("?") != -1) {
+        var str = url.substr(1);
+        strs = str.split("&");
+        for (var i = 0; i < strs.length; i++) {
+            Request[strs[i].split("=")[0]] = decodeURI(strs[i].split("=")[1]);
+        }
+        console.log(Request["userName"]);
+
+    }
+    var elnav = new Vue({
+        el: "#app",
+        data: {
+            userid: Request["userID"],
+            userName: Request["userName"],
+            changedpassword: '',
+            ruleForm: {
+                oldpass: '',
+                pass: '',
+                checkPass: ''
+            },
+        },
+        methods: {
+            handleOpen(key, keyPath) {
+                console.log(key, keyPath)
+            },
+            handleClose(key, keyPath) {
+                console.log(key, keyPath)
+            },
+            submitForm(formName) {
+                if (this.ruleForm.oldpass.length == 0 || this.ruleForm.pass.length == 0 || this.ruleForm.checkPass.length == 0) {
+                    alert("密码输入不能为空");
+                }
+                else if (this.ruleForm.oldpass == this.ruleForm.pass) {
+                    alert('新密码与旧密码不能相同!');
+                } else if (this.ruleForm.checkPass != this.ruleForm.pass) {
+                    alert('两次输入密码不一致!');
+                }
+                else if (this.ruleForm.pass.length < 8 || this.ruleForm.pass.length > 20) {
+                    alert("密码长度不符合要求，请重新输入！");
+                } else {
+                    axios.post("/UserInfo/passwordModify", {
+                        oldpassword: this.ruleForm.oldpass, newpassword: this.ruleForm.pass
+                    }).then(response => {
+                        var data = JSON.parse(response.data).error_code;
+                        console.log(data);
+                        if (data == 0) {
+                            alert('修改成功!');
+                            window.location.replace('/UserInfo/perpagestru');
+                        }
+                        else if (data == 1)
+                            alert('修改失败!');
+                        else
+                            alert('请输入正确的密码');
+                    })
+                        .catch(error => {
+                            console.log(666);
+                        })
+                }
+            },
+            resetForm(formName) {
+                this.$refs[formName].resetFields()
+            },
+            changepassword: function () {
+                url = "../UserInfo/changepsw?userID=" + encodeURI(this.userID) + "&userName=" + encodeURI(this.userName);
+                window.location.href = url;
+            }
+        }
+    })
+</script>

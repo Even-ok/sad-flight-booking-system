@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    @Styles.Render("~/css/handleFeedback.css")
+    <script src="~/Scripts/axios.min.js"></script>
+    <title>feedback</title>
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin-left: 0px;
+    }
+</style>
+<body>
+    <div>
+        @RenderPage("~/Views/Flight/AdminHeadBar.cshtml")
+    </div>
+    <div id="admin">
+        <div id="bk">
+            <div id="fb">
+                <div class="grid-container">
+                    <div class="item2">
+                        <div class="grid-content bg-purple">
+                            <h2 style="text-align: center;">反馈信息</h2>
+                            <el-divider></el-divider>
+                            <ul class="list">
+                                <li><span>反馈编号：{{feedbackID}}</span></li>
+                                <li><span>用户 ID：{{UserID}}</span></li>
+                                <li><span>反馈时间：{{feedbackTime}}</span></li>
+                                <li><span>反馈内容：{{feedbackContent}}</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item3">
+                        <div class="grid-content bg-purple">
+                            <h2 style="text-align: center;">反馈回复</h2>
+                            <el-divider></el-divider>
+                            <div class="t1">
+                                <textarea id="fd" placeholder="回复内容.." width="300px"></textarea>
+                                <el-button id="btn" type="primary" v-on:click="submit()">提交</el-button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="~/js/handleFeedback.js"></script>

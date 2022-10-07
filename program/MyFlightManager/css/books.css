@@ -1,0 +1,195 @@
+﻿#guidebar {
+    background-color: white;
+    height: 120px;
+    min-width: 1024px;
+}
+
+#head {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+    #head ul {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        background-color: white;
+    }
+
+    #head li {
+        margin-top: 20px;
+        margin-left: 10px;
+        list-style: none;
+        float: left;
+        line-height: 100px;
+    }
+
+        #head li:hover a {
+            color: lightblue;
+        }
+
+    #head span {
+        margin: 0 20px;
+    }
+
+a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+#menu ul {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #2c3e50;
+    background-color: white;
+}
+
+#menu li {
+    margin-top: 10px;
+    margin-left: 0;
+    list-style: none;
+    float: left;
+    line-height: 20px;
+}
+
+    #menu li:hover a {
+        color: #f37bcb;
+    }
+
+.el-menu-demo {
+    text-align: center;
+}
+
+.dropdown {
+    z-index: 99;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    color: black;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#bk {
+    min-width: 1220px;
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.el-menu {
+    background-color: #d3dce6;
+}
+
+.timeblock {
+    margin-left: 70px;
+}
+
+.demonstration {
+    margin-right: 10px;
+}
+
+.el-button--primary.is-plain {
+    color: white;
+    background: skyblue;
+    border-color: white;
+}
+
+.demo-table-expand {
+    font-size: 0;
+}
+
+    .demo-table-expand label {
+        width: 90px;
+        color: #99a9bf;
+    }
+
+    .demo-table-expand .el-form-item {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 45%;
+    }
+
+.caozuo {
+    margin-right: 20px;
+}
+
+body {
+    padding: 0;
+}
+
+.item2 {
+    grid-area: menu;
+    background-color: white;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.item3 {
+    grid-area: main;
+    background-color: white;
+    border-radius: 8px;
+    height: 700px;
+    width: 940px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'menu main ';
+    background-color: rgba(245, 238, 238, 0.7);
+    padding: 20px;
+    grid-gap: 20px;
+    width: 1250px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 130px;
+    border-radius: 8px;
+}
+
+#subtitle {
+    padding: 30px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(87, 84, 84);
+    margin-left: 25px;
+}
+
+.timeblock {
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.demonstration {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(87, 84, 84);
+}
+
+.el-date-editor--daterange.el-input__inner {
+    width: 400px;
+}
+
+.el-date-editor .el-range-separator {
+    padding: 0 5px;
+    line-height: 32px;
+    width: 8%;
+    color: #303133;
+}

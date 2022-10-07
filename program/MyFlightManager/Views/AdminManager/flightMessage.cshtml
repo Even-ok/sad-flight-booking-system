@@ -1,0 +1,489 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    <script src="~/Scripts/sweetalert.min.js"></script><link rel="stylesheet" type="text/css" href="~/Styles/sweetalert.css" />
+    <title>airportMessage</title>
+    @Styles.Render("~/css/message.css")
+    @Styles.Render("~/css/leftmenu.css")
+</head>
+<body>
+    <div>
+        @RenderPage("~/Views/Flight/AdminHeadBar.cshtml")
+    </div>
+    <div id="admin">
+        <div id="flightmes">
+            <el-container>
+                <el-aside style="width:200px;">
+                    <el-menu router
+                             class="el-menu-demo"
+                             background-color="#4862b9"
+                             style="border-right:none"
+                             text-color="white"
+                             active-background-color="white">
+                        <!--有下级菜单的菜单项-->
+                        <el-submenu index="1">
+                            <template slot="title">
+                                <i class="el-icon-trophy"></i>
+                                <span>航班管理</span>
+                            </template>
+                            <!--一组菜单项-->
+                            <el-menu-item-group>
+                                <el-menu-item index="/fli/flightmes" onclick="window.location.href='/AdminManager/flightMessage'">
+                                    <i class="el-icon-s-tools"></i>
+                                    <span>航班信息管理</span>
+                                </el-menu-item>
+                                <el-menu-item index="/fli/classmes" onclick="window.location.href='/AdminManager/classMessage'">
+                                    <i class="el-icon-more"></i>
+                                    <span>舱位信息管理</span>
+                                </el-menu-item>
+                            </el-menu-item-group>
+                        </el-submenu>
+                        <el-submenu index="2">
+                            <template slot="title">
+                                <i class="el-icon-coin"></i>
+                                <span>机场管理</span>
+                            </template>
+                            <!--一组菜单项-->
+                            <el-menu-item-group>
+                                <el-menu-item index="/air/airportmes" onclick="window.location.href='/AdminManager/airportMessage'">
+                                    <i class="el-icon-s-help"></i>
+                                    <span>机场信息管理</span>
+                                </el-menu-item>
+                                <el-menu-item index="/air/citymes" onclick="window.location.href='/AdminManager/cityMessage'">
+                                    <i class="el-icon-s-promotion"></i>
+                                    <span>城市信息管理</span>
+                                </el-menu-item>
+                                <el-menu-item index="/air/planemes" onclick="window.location.href='/AdminManager/planeMessage'">
+                                    <i class="el-icon-s-opportunity"></i>
+                                    <span>飞机信息管理</span>
+                                </el-menu-item>
+                            </el-menu-item-group>
+                        </el-submenu>
+                        <el-menu-item index="/fli/classmes" onclick="window.location.href='/AdminManager/airlineMessage'">
+                            <i class="el-icon-s-data"></i>
+                            <span>航线管理</span>
+                        </el-menu-item>
+                        <el-menu-item index="/fli/classmes" onclick="window.location.href='/AdminManager/companyMessage'">
+                            <i class="el-icon-s-check"></i>
+                            <span>航空公司管理</span>
+                        </el-menu-item>
+                    </el-menu>
+                </el-aside>
+                <!--包含相关信息和搜索-->
+                <!--对文字的说明-->
+                <el-main>
+                    <div class="pagemain">
+                        <el-form :inline="true" :model="flightmes" class="demo-form-inline">
+                            <el-form-item label="航班号">
+                                <el-input v-model="flightmes.flightnumber" placeholder="请输入内容" id="flightnumber"></el-input>
+                            </el-form-item>
+                            <el-form-item label="航空公司">
+                                <el-input v-model="flightmes.flightcompany" placeholder="请输入内容" id="flightcompany"></el-input>
+                            </el-form-item>
+                            <el-form-item label="航线ID">
+                                <el-input v-model="flightmes.airlineID" placeholder="请输入内容" id="airlineID"></el-input>
+                            </el-form-item>
+                            <!--查询信息-->
+                            <el-form-item>
+                                <el-button type="primary" icon="el-icon-search" v-on:click="query">查询信息</el-button>
+                            </el-form-item>
+                        </el-form>
+
+                        <div class="message">
+                            <el-row>
+                                <el-col :span="24">
+                                    <el-table :header-cell-style="{background:'#4862b9',color:'#fff'}"
+                                              :data="tableData"
+                                              border
+                                              style="width:100%"
+                                              height="400"
+                                              highlight-current-row>
+                                        <el-table-column prop="flightnumber"
+                                                         label="航班号"
+                                                         width="120">
+                                        </el-table-column>
+                                        <el-table-column prop="airline"
+                                                         label="飞行航线"
+                                                         width="120">
+                                        </el-table-column>
+                                        <el-table-column prop="airlineID"
+                                                         label="航线ID"
+                                                         width="118">
+                                        </el-table-column>
+                                        <el-table-column prop="departtime"
+                                                         label="起飞时间"
+                                                         width="120">
+                                        </el-table-column>
+                                        <el-table-column prop="arrivetime"
+                                                         label="到达时间"
+                                                         width="120">
+                                        </el-table-column>
+                                        <el-table-column prop="aircompany"
+                                                         label="航空公司"
+                                                         width="120">
+                                        </el-table-column>
+                                        <el-table-column prop="flightstate"
+                                                         label="航班状态"
+                                                         width="110">
+                                        </el-table-column>
+
+                                        <el-table-column prop="HP"
+                                                         label="头等舱价格"
+                                                         width="110">
+                                        </el-table-column>
+
+                                        <el-table-column prop="SP"
+                                                         label="经济舱价格"
+                                                         width="110">
+                                        </el-table-column>
+                                        <el-table-column prop="airplaneID"
+                                                         label="飞机编号"
+                                                         width="110">
+                                        </el-table-column>
+                                        <el-table-column prop="asdad"
+                                                         fixed="right"
+                                                         label="操作"
+                                                         width="130">
+                                            <!--加入按钮-->
+                                            <template slot-scope="scope">
+                                                <el-button style="margin-left: 10px" v-on:click="handleEdit(scope.$index, scope.row)" type="primary" size="mini" icon="el-icon-edit" circle></el-button>
+                                                <el-button style="margin-left: 10px" v-on:click="handleDelete(scope.$index, scope.row.flightnumber, scope.row.departtime)" type="danger" size="mini" icon="el-icon-delete" circle></el-button>
+                                            </template>
+                                        </el-table-column>
+                                    </el-table>
+                                </el-col>
+                                <el-col :span="24">
+                                    <div class="el-table-add-row" style="width:99.2%;" v-on:click="add()"><span>+添加</span></div>
+                                </el-col>
+                            </el-row>
+                            <el-dialog width="30%" title="航班信息" :visible.sync="zdydialog" append-to-body>
+                                <el-form :model="form"  :rules="rules">
+                                    <div v-if="submitType == 'add'">
+                                        <el-form-item label="航班编号" prop="flightnumber" width="180px">
+                                            <el-input class="dialog_input" v-model="form.flightnumber" placeholder="请输入航班编号" maxlength="6" show-word-limit></el-input>
+                                        </el-form-item>
+                                    </div>
+                                    <div v-else-if="submitType == 'update'">
+                                        <el-form-item label="航班编号" width="180px">
+                                            <el-input class="dialog_input" v-model="form.flightnumber" :disabled="true"></el-input>
+                                        </el-form-item>
+                                    </div>
+
+                                    <el-form-item label="航线编号" width="140px" prop="airlineID">
+                                        <el-input class="dialog_input" v-model="form.airlineID" placeholder="请输入航线编号" maxlength="6" show-word-limit></el-input>
+                                    </el-form-item>
+
+
+                                    <div v-if="submitType == 'add'">
+
+                                        <el-form-item label="起飞时间" width="140px" prop="departtime">
+                                            <el-date-picker v-model="form.departtime"
+                                                            type="datetime"
+                                                            placeholder="选择日期时间"
+                                                            align="right"
+                                                            :picker-options="pickerOptions">
+                                            </el-date-picker>
+                                        </el-form-item>
+                                    </div>
+                                    <div v-else-if="submitType == 'update'">
+
+                                        <el-form-item label="起飞时间" width="140px">
+                                            <el-date-picker v-model="form.departtime"
+                                                            type="datetime"
+                                                            placeholder="选择日期时间"
+                                                            align="right"
+                                                            :picker-options="pickerOptions"
+                                                            :disabled="true">
+                                            </el-date-picker>
+                                        </el-form-item>
+                                    </div>
+
+
+
+                                    <el-form-item label="到达时间" width="140px" prop="arrivetime">
+                                        <el-date-picker v-model="form.arrivetime"
+                                                        type="datetime"
+                                                        placeholder="选择日期时间"
+                                                        align="right"
+                                                        :picker-options="pickerOptions">
+                                        </el-date-picker>
+                                    </el-form-item>
+                                    <el-form-item label="航空公司" width="140px" prop="aircompany">
+                                        <el-input class="dialog_input" v-model="form.aircompany" placeholder="请输入航空公司"></el-input>
+                                    </el-form-item>
+                                    <el-form-item label="航班状态" width="140px" prop="flightstate">
+                                        <el-select v-model="form.flightstate" placeholder="请选择航班状态">
+                                            <el-option label="准时到达" value="on-time"></el-option>
+                                            <el-option label="延迟到达" value="delayed"></el-option>
+                                            <el-option label="正在飞行" value="flying"></el-option>
+                                            <el-option label="已到达" value="arrived"></el-option>
+                                        </el-select>
+                                    </el-form-item>
+                                    <el-form-item label="头等舱价格" width="140px" prop="HP">
+                                        <el-input class="dialog_input" v-model="form.HP" placeholder="请输入价格"></el-input>
+                                    </el-form-item>
+                                    <el-form-item label="经济舱价格" width="140px" prop="SP">
+                                        <el-input class="dialog_input" v-model="form.SP" placeholder="请输入价格"></el-input>
+                                    </el-form-item>
+                                    <el-form-item label="飞机编号" width="140px" prop="airplaneID">
+                                        <el-input class="dialog_input" v-model="form.airplaneID"  placeholder="请输入飞机编号" maxlength="6" show-word-limit></el-input>
+                                    </el-form-item>
+                                </el-form>
+
+                                <div slot="footer" class="dialog-footer">
+                                    <el-button v-on:click="cancel">取 消</el-button>
+                                    <el-button type="primary" v-on:click="submit">确 定</el-button>
+                                </div>
+                            </el-dialog>
+                        </div>
+                    </div>
+                </el-main>
+            </el-container>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el: '#flightmes',
+        methods: {
+            handleClick(row) {
+                console.log(row);
+            },
+            query() {
+                var no = document.getElementById("flightnumber").value;
+                var com = document.getElementById("flightcompany").value;
+                var id = document.getElementById("airlineID").value;
+                axios.post("/AdminManager/flightQuery", {
+                    flight_number: no,
+                    company_name:com,
+                    airline_ID:id
+                })
+                    .then(response => {
+                        var _this = this;
+                        var data = JSON.parse(response.data).data;
+                        _this.tableData = data;
+                    })
+                    .catch(error => {
+                        this.tableData = [];
+                        console.log(666);
+                    })
+            },
+
+            add() {
+                this.form = {
+                    flightnumber: '',
+                    arrivetime: '',
+                    aircompany: '',
+                    flightstate: 'on-time',
+                    departtime: '',
+                    airlineID: '',
+                    HP: '',
+                    SP: '',
+                    airplaneID: ''
+                }
+                this.submitType = "add";
+                this.zdydialog = true
+            },
+            submit(index) {
+                //alert(this.form.date)
+                // var ss = reformat(this.form.date)
+                // alert(ss)
+                this.zdydialog = false
+
+                if (this.submitType == "add" && this.form.flightnumber != "") {
+                    axios.post("/AdminManager/flightAdd", {
+                        flight_number: this.form.flightnumber,
+                        airplane_id: this.form.airplaneID,
+                        depart_data: this.form.departtime,
+                        arrive_date: this.form.arrivetime,
+                        flight_state: this.form.flightstate,
+                        company_name: this.form.aircompany,
+                        airline_ID: this.form.airlineID,
+                        first_class_price: this.form.HP,
+                        economy_class_price: this.form.SP
+                    })
+                        .then(response => {
+                            console.log(response);
+                            var error_code = JSON.parse(response.data).error_code;
+                            if (error_code == 0) {
+                                this.tableData.push(this.form);
+                                swal({
+                                    title: "添加成功!",
+                                    //type: "success"
+                                });
+                                
+                            }
+                            else
+                                swal({
+                                    title: "添加失败!",
+                                    //type: "error"
+                                });
+
+                        })
+                        .catch(error => {
+                            console.log(666);
+                            swal({
+                                title: "添加失败!",
+                                //type: "error"
+                            });
+                        })
+                    this.query();
+                }
+
+                if (this.submitType == "update") {
+
+                    axios.post("/AdminManager/flightModify", {
+                        flight_number: this.form.flightnumber,
+                        airplane_id: this.form.airplaneID,
+                        depart_data: this.form.departtime,
+                        arrive_date: this.form.arrivetime,
+                        flight_state: this.form.flightstate,
+                        company_name: this.form.aircompany,
+                        airline_ID: this.form.airlineID,
+                        first_class_price: this.form.HP,
+                        economy_class_price: this.form.SP
+                    })
+                        .then(response => {
+                            console.log(response);
+                            var error_code = JSON.parse(response.data).error_code;
+                            if (error_code == 0) {
+                                swal({
+                                    title: "修改成功!",
+                                    //type: "success"
+                                });
+                                this.query();
+                            }
+                            else
+                                swal({
+                                    title: "修改失败!",
+                                   // type: "error"
+                                });
+
+                        })
+                        .catch(error => {
+                            console.log(666);
+                            swal({
+                                title: "修改失败!",
+                                //type: "error"
+                            });
+                        })
+                }
+
+            },
+            handleEdit(index, row) {
+                this.submitType = "update";
+                this.form = JSON.parse(JSON.stringify(row));
+                this.zdydialog = true;
+            },
+            cancel() {
+                this.zdydialog = false
+            },
+
+            handleDelete(index, flight_number, depart_time) {
+                console.log("进入");
+                this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    axios.post("/AdminManager/flightDelete", {
+                        flight_number: flight_number,
+                        depart_time:depart_time
+                    })
+                        .then(response => {
+                            var flag = JSON.parse(response.data).error_code;
+                            if (flag == 0) {
+                                this.$message({
+                                    type: 'success',
+                                    message: '删除成功!'
+                                });
+                                this.tableData.splice(index, 1);
+                            }
+                            else
+                                this.$message({
+                                    type: 'info',
+                                    message: '删除失败!'
+                                });
+                        })
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '已取消删除'
+                    });
+                });
+            },
+
+
+
+        },
+        data() {
+            return {
+                show: true,
+                inputflightnumber: '',
+                inputflightcompany: '',
+                inputairlineID: '',
+                flightmes: {
+                    flightnumber: '',
+                    flightcompany: '',
+                    airlineID: '',
+                    
+
+                },
+                tableData: [],
+                zdydialog: false,
+                formLabelWidth: '80px',
+                form: {},
+                submitType: "",
+                rules: {
+                    flightnumber: [
+                        { required: true, message: '请输入航班号', trigger: 'blur' },
+                        { min: 6, max: 6, message: '长度为6个字符', trigger: 'blur' }
+                    ],
+                    airlineID: [
+                        { required: true, message: '请输入航线号', trigger: 'blur' },
+                        { min: 1, max: 6, message: '长度为1~6个字符', trigger: 'blur' }
+                    ],
+                    aircompany: [
+                        { required: true, message: '请输入航空公司', trigger: 'blur' },
+                        { min: 1, max: 6, message: '长度为1~6个字符', trigger: 'blur' }
+                    ],
+                    HP: [
+                        { required: true, message: '请输入头等舱价格', trigger: 'blur' },
+                     
+                    ],
+                    SP: [
+                        { required: true, message: '请输入经济舱价格', trigger: 'blur' },
+                        
+                    ],
+                    flightstate: [
+                        { required: true, message: '请选择航班状态', trigger: 'blur' },
+                    ],
+                    departtime: [
+                        { required: true, message: '请选择出发日期', trigger: 'blur' },
+                    ],
+                    arrivetime: [
+                        { required: true, message: '请选择达到日期', trigger: 'blur' },
+                    ],
+                    airplaneID: [
+                        { required: true, message: '请输入飞机编号', trigger: 'blur' },
+                        { min: 1, max: 6, message: '长度为1~6个字符', trigger: 'blur' }
+                    ],
+                }
+            }
+
+        }
+    })
+</script>
+</html>

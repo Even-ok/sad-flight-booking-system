@@ -1,0 +1,154 @@
+﻿#app {
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background-image: url("../img/backgroundimage.jpg");
+    background-size: cover;
+    z-index: -10;
+    background-position: center 0;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.el-input__inner {
+    -webkit-appearance: none;
+    background-color: #FFF;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #515151;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline-style: none;
+    outline: 0;
+    padding: 0 10px;
+    -webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+}
+
+.el-input__icon {
+    height: 100%;
+    width: 3px;
+    text-align: center;
+    line-height: 40px;
+}
+
+ .el-cascader .el-input .el-icon-arrow-down {
+    transition: transform .3s,-webkit-transform .3s;
+    font-size: 14px;
+    float: right
+}
+
+.el-cascader {
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    color: #515151;
+    outline-style: none;
+}
+
+#searchbox {
+    background-image: url("../img/rec.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 600px 550px;
+    margin-top: 60px;
+    width: 100%;
+    height: 600px;
+}
+
+#choose h2 {
+    text-align: center;
+    color: #515151;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#choose input {
+    margin-top: 0px;
+    border-radius: 4px;
+    height: 38px;
+    width: 278px;
+    padding: 0 10px;
+    color: #515151;
+    outline-style: none;
+    border: 1px solid #bfbfbf;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#choose select {
+    margin-top: 0px;
+    border-radius: 8px;
+    height: 35px;
+    width: 300px;
+    color: #515151;
+    outline-style: none;
+    border: 1px solid #bfbfbf;
+}
+
+#choose li {
+    position:center;
+    line-height: 30px;
+    color: #515151;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4862b9;
+    color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.search:active {
+    background: rgb(63, 54, 139);
+}
+
+#homemain h1 {
+    animation: fadeInAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: 'Georgia';
+    font-size: 5.5rem;
+    padding-top: 300px;
+    color: #000;
+    vertical-align: middle
+}
+
+    #homemain h1:hover {
+        padding-top: 280px;
+        padding-bottom: 20px;
+        transition: all 1s ease;
+        opacity: 0.6;
+    }
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0; /*设置不透明度*/
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

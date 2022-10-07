@@ -1,0 +1,79 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>messagebody</title>
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/css/messagebody.css")
+</head>
+
+<body>
+    <div id="app">
+        @RenderPage("~/Views/Flight/HeadBar.cshtml")
+        <div class="grid-container">
+            <div class="item2">
+                <div id="menutitle">
+                    消息中心
+                </div>
+                <HR>
+                <div id="menubody">
+                    <ul id="menu">
+                        <li><a onclick="window.location.replace('/Message/message')">值机通知</a></li>
+                        <li><a onclick="window.location.replace('/Message/feedbackMessage')">反馈通知</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item3">
+                <div id="mainbody">
+                    <div class="noticeContent">
+                        <ul style="list-style-type:none" class="notice_list" :class="noticeList.length>1?{notice_top:animate}:''">
+                            <li style="list-style-type:none" v-for="(item, index) in noticeList" :key="index">
+                                <div id="message">
+                                    <h>反馈处理通知</h>
+                                    <div id="time">{{item.time}}</div><br />
+                                    <p>{{item.content}}</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var app = new Vue({
+        el: "#mainbody",
+        data: {
+            noticeList: [],
+            animate: false
+        }
+    })
+    function init() {
+        axios.post("/Message/FeedBack")
+            .then(response => {
+                var data = JSON.parse(response.data)
+                if (data.error_code == 0) {
+                    app.noticeList = [];
+                    for (var i of data.info)
+                        app.noticeList.push(i);
+                }
+                else {
+                    app.noticeList = [];
+                }
+            }).catch(function (error) {
+                console.log(error)
+            })
+    }
+    window.onload = init;
+</script>

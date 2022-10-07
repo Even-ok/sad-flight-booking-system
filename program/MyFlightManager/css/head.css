@@ -1,0 +1,59 @@
+﻿#app {
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    margin:0;
+    width:100%;
+    height:100%;
+}
+
+#guidebar {
+    top:0;
+    background-color: white;
+    height: 120px;
+    min-width: 1024px;
+    margin-top:-16px;
+}
+
+#head {
+    background-color: white;
+    margin: 0;
+    padding: 0
+}
+
+
+#head ul {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    background-color: white;
+}
+
+#head li {
+    margin-top: 20px;
+    margin-left: 10px;
+    list-style: none;
+    float: left;
+    line-height: 100px;
+}
+
+span {
+    margin: 0 20px;
+}
+
+#head2 li {
+    margin-top: 40px;
+    margin-left: 10px;
+    list-style: none;
+    float: left;
+    line-height: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #2c3e50;
+}

@@ -1,0 +1,136 @@
+﻿#app2 {
+    width:100%;
+    top:0;
+    left:0;
+    overflow:auto;
+    overflow-x:no-display;
+    padding-left:180px;
+    padding-right:180px;
+}
+
+.bg-purple-dark {
+    background: #e5e5e5;
+    border-radius: 4px;
+}
+
+#app2 h1 {
+    margin-top: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#app2 h2 {
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 40px;
+    margin-bottom: 0px;
+}
+
+.el-header {
+    background-color: #ffffff;
+    color: #333;
+    text-align: left;
+    line-height: 40px;
+    height: auto;
+}
+
+.el-main {
+    color: #333;
+    text-align: left;
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right:40px;
+    margin-bottom: 20px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+}
+
+.el-table {
+    margin-bottom: 40px;
+}
+
+.grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+}
+
+body > .el-container {
+    margin-bottom: 40px;
+}
+
+.el-row {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.el-button {
+    margin-top: 10px;
+}
+
+element.style {
+    height: auto;
+}
+
+.text {
+    font-size: 15px;
+    color: #333
+}
+
+.item {
+    padding: 0px 0;
+}
+
+.box-card {
+    width: 300px;
+    margin-bottom: 50px;
+    background-color: #fcebbd;
+    box-shadow: 0 0 0;
+    text-align: center;
+}
+
+#guidebar {
+    background-color: white;
+    height: 120px;
+    min-width: 1024px
+}
+
+
+#head2 {
+    float:right;
+    height: 120px;
+}
+
+#head ul {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#head li {
+    margin-top: 20px;
+    margin-left: 10px;
+    list-style: none;
+    float: left;
+    line-height: 100px;
+}
+
+span {
+    margin: 0 20px;
+}
+
+#head2 li {
+    margin-top: 4px;
+    margin-left: 10px;
+    list-style: none;
+    float: left;
+    line-height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #2c3e50;
+}

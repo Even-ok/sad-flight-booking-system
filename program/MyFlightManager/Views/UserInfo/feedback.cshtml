@@ -1,0 +1,75 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+
+    @Styles.Render("~/css/userFeedback.css")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<style>
+    body{
+        padding-top:0px;
+    }
+</style>
+
+<div id="app">
+
+    @RenderPage("~/Views/Flight/HeadBar.cshtml")
+    <div id="admin">
+        <div id="bk2">
+
+            <div style="height:5px"></div>
+            <h2 id="tip">用户反馈</h2>
+            <el-divider></el-divider>
+            <div id="content">
+                <div class="t1">
+                    <textarea id="fd" placeholder="清在这里描述您遇到的问题..."></textarea>
+                </div>
+                <br>
+                <div class="t2">
+                    <textarea id="ho" placeholder="期望要求..."></textarea>
+                </div>
+                <div class="b1">
+                    <el-button id="btn" type="success" v-on:click="add_feedback()" style="background:#4862b9;color:#fff;border:none;">提交</el-button>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var bk2 = new Vue({
+                    el: "#bk2",
+                    data: {},
+                    methods: {
+                        add_feedback: function () {
+                            alert("确定提交？");
+                            axios.post("/UserInfo/addFeedBack", {
+                                fd: document.getElementById("fd").value,
+                                ho: document.getElementById("ho").value
+                            })
+                                .then(response => {
+                                    var error_code = JSON.parse(response.data).error_code;
+                                    if (error_code == 0) {
+                                        alert("提交成功");
+                                        window.location.href = "/UserInfo/perpagestru";
+                                    }
+                                    else
+                                        alert("提交失败");
+                                })
+                                .catch(error => {
+                                    console.log(666);
+                                    alert("提交失败");
+                                })
+                        }
+                    }
+                })
+            </script>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,366 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/vue-resource.js"></script>
+    <script src="~/Scripts/ElementUI/element-ui.js"></script>
+    <link href="~/Content/ElementUI/element-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/axios.min.js"></script>
+<script src="~/Scripts/sweetalert.min.js"></script><link rel="stylesheet" type="text/css" href="~/Styles/sweetalert.css" /><link rel="stylesheet" type="text/css" href="~/Styles/sweetalert.css" />
+    <title>cityMessage</title>
+    @Styles.Render("~/css/message.css")
+    @Styles.Render("~/css/leftmenu.css")
+</head>
+<div>
+    @RenderPage("~/Views/Flight/AdminHeadBar.cshtml")
+</div>
+<div id="admin">
+    <div id="citymes">
+        <el-container>
+            <el-aside style="width:200px;">
+                <el-menu router
+                         class="el-menu-demo"
+                         background-color="#4862b9"
+                         style="border-right:none"
+                         text-color="white"
+                         active-background-color="white">
+                    <!--有下级菜单的菜单项-->
+                    <el-submenu index="1">
+                        <template slot="title">
+                            <i class="el-icon-trophy"></i>
+                            <span>航班管理</span>
+                        </template>
+                        <!--一组菜单项-->
+                        <el-menu-item-group>
+                            <el-menu-item index="/fli/flightmes" onclick="window.location.href='/AdminManager/flightMessage'">
+                                <i class="el-icon-s-tools"></i>
+                                <span>航班信息管理</span>
+                            </el-menu-item>
+                            <el-menu-item index="/fli/classmes" onclick="window.location.href='/AdminManager/classMessage'">
+                                <i class="el-icon-more"></i>
+                                <span>舱位信息管理</span>
+                            </el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-submenu index="2">
+                        <template slot="title">
+                            <i class="el-icon-coin"></i>
+                            <span>机场管理</span>
+                        </template>
+                        <!--一组菜单项-->
+                        <el-menu-item-group>
+                            <el-menu-item index="/air/airportmes" onclick="window.location.href='/AdminManager/airportMessage'">
+                                <i class="el-icon-s-help"></i>
+                                <span>机场信息管理</span>
+                            </el-menu-item>
+                            <el-menu-item index="/air/citymes" onclick="window.location.href='/AdminManager/cityMessage'">
+                                <i class="el-icon-s-promotion"></i>
+                                <span>城市信息管理</span>
+                            </el-menu-item>
+                            <el-menu-item index="/air/planemes" onclick="window.location.href='/AdminManager/planeMessage'">
+                                <i class="el-icon-s-opportunity"></i>
+                                <span>飞机信息管理</span>
+                            </el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-menu-item index="/fli/classmes" onclick="window.location.href='/AdminManager/airlineMessage'">
+                        <i class="el-icon-s-data"></i>
+                        <span>航线管理</span>
+                    </el-menu-item>
+                    <el-menu-item index="/fli/classmes" onclick="window.location.href='/AdminManager/companyMessage'">
+                        <i class="el-icon-s-check"></i>
+                        <span>航空公司管理</span>
+                    </el-menu-item>
+                </el-menu>
+            </el-aside>
+            <el-main>
+                <div id="pagemain">
+                    <el-form :inline="true" :model="citymes" class="demo-form-inline">
+                        <el-form-item label="城市ID">
+                            <el-input id="input" v-model="citymes.cityID" placeholder="请输入内容"></el-input>
+                        </el-form-item>
+
+                        <!--查询信息-->
+                        <el-form-item>
+                            <el-button type="primary" icon="el-icon-search" v-on:click="query">查询信息</el-button>
+                        </el-form-item>
+
+                    </el-form>
+                    <div class="message">
+                        <el-row>
+                            <el-col :span="19">
+                                <el-table :header-cell-style="{background:'#4862b9',color:'#fff'}"
+                                          :data="tableData"
+                                          style="width:100%"
+                                          height="400"
+                                          border
+                                          highlight-current-row>
+                                    <el-table-column prop="cityID"
+                                                     label="城市ID"
+                                                     width="160">
+
+                                    </el-table-column>
+                                    <el-table-column prop="cityname"
+                                                     label="城市名"
+                                                     width="160">
+
+                                    </el-table-column>
+                                    <el-table-column prop="country"
+                                                     label="所在国家"
+                                                     width="160">
+
+                                    </el-table-column>
+                                    <el-table-column prop="COV19risk"
+                                                     label="该城市的风险等级"
+                                                     width="160">
+
+                                    </el-table-column>
+                                    <el-table-column prop="asdad"
+                                                     label="操作"
+                                                     width="130">
+                                        <!--加入按钮-->
+                                        <template slot-scope="scope">
+                                            <el-button style="margin-left: 10px" v-on:click="handleEdit(scope.$index, scope.row)" type="primary" size="mini" icon="el-icon-edit" circle></el-button>
+                                            <el-button style="margin-left: 10px" v-on:click="handleDelete(scope.$index, scope.row.cityID)" type="danger" size="mini" icon="el-icon-delete" circle></el-button>
+                                        </template>
+                                    </el-table-column>
+                                </el-table>
+                            </el-col>
+                            <el-col :span="19">
+                                <div class="el-table-add-row" style="width:99.2%;" v-on:click="add"><span>+添加</span></div>
+                            </el-col>
+                        </el-row>
+
+                        <el-dialog width="30%" title="城市信息" :visible.sync="zdydialog" append-to-body>
+                            <el-form :model="form" :rules="rules">
+
+
+
+                                <div v-if="submitType == 'add'">
+                                    <el-form-item label="城市编号" prop="cityID" width="140px">
+                                        <el-input class="dialog_input" v-model="form.cityID" maxlength="4" placeholder="请输入四位城市信息"></el-input>
+                                    </el-form-item>
+                                </div>
+                                <div v-else-if="submitType == 'update'">
+                                    <el-form-item label="城市编号" width="140px">
+                                        <el-input class="dialog_input" v-model="form.cityID" :disabled="true"></el-input>
+                                    </el-form-item>
+                                </div>
+
+                                <el-form-item label="城市名称" prop="cityname" width="140px">
+                                    <el-input class="dialog_input" v-model="form.cityname"  maxlength="20" placeholder="请输入城市名称"></el-input>
+                                </el-form-item>
+                                <el-form-item label="国家"  prop="country" width="140px">
+                                    <el-input class="dialog_input" v-model="form.country"  maxlength="20" placeholder="请输入国家名称"></el-input>
+                                </el-form-item>
+                                <el-form-item label="疫情风险等级" prop="COV19risk" width="140px">
+                                    <el-select v-model="form.COV19risk" placeholder="请选择疫情风险等级">
+                                        <el-option label="高" value="h"></el-option>
+                                        <el-option label="中" value="m"></el-option>
+                                        <el-option label="低" value="l"></el-option>
+                                    </el-select>
+                                </el-form-item>
+                            </el-form>
+
+                            <div slot="footer" class="dialog-footer">
+                                <el-button v-on:click="cancel">取 消</el-button>
+                                <el-button type="primary" v-on:click="submit">确 定</el-button>
+                            </div>
+                        </el-dialog>
+                    </div>
+                </div>
+            </el-main>
+        </el-container>
+    </div>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el: '#citymes',
+        methods: {
+            handleClick(row) {
+                console.log(row);
+            },
+            add() {
+                this.form = {
+                    cityID: '',
+                    cityname: '',
+                    country: '',
+                    COV19risk:'l',
+                }
+                this.submitType = "add";
+                this.zdydialog = true
+            },
+            submit() {
+                //alert(this.form.date)
+                // var ss = reformat(this.form.date)
+                // alert(ss)
+                this.zdydialog = false
+
+                if (this.submitType == "add") {
+                    axios.post("/AdminManager/cityAdd", {
+                        city_id: this.form.cityID,
+                        city_name: this.form.cityname,
+                        country: this.form.country,
+                        COV19risk: this.form.COV19risk
+                    })
+                        .then(response => {
+                            console.log(response);
+                            var error_code = JSON.parse(response.data).error_code;
+                            if (error_code == 0) {
+                                this.tableData.push(this.form);
+                                swal({
+                                    title: "添加成功!",
+                                    //type: "success"
+                                });
+                                this.query();
+                            }
+                            else
+                                swal({
+                                    title: "添加失败!",
+                                    //type: "error"
+                                });
+
+                        })
+                        .catch(error => {
+                            console.log(666);
+                            swal({
+                                title: "添加失败!",
+                                //type: "error"
+                            });
+                        })
+                }
+                if (this.submitType == "update") {
+                    console.log("update22");
+                    axios.post("/AdminManager/cityModify", {
+                        city_id: this.form.cityID,
+                        city_name: this.form.cityname,
+                        country: this.form.country,
+                        COV19risk: this.form.COV19risk
+                    })
+                        .then(response => {
+                            console.log(response);
+                            var error_code = JSON.parse(response.data).error_code;
+                            if (error_code == 0) {
+                                swal({
+                                    title: "修改成功!",
+                                    //type: "success"
+                                });
+                                this.query();
+                            }
+                            else
+                                swal({
+                                    title: "修改失败!",
+                                    //type: "error"
+                                });
+
+                        })
+                        .catch(error => {
+                            console.log(666);
+                            swal({
+                                title: "修改失败!",
+                                //type: "error"
+                            });
+                        })
+                }
+
+            },
+            handleEdit(index, row) {
+                // this.form = this.tableData[index]
+                this.submitType = "update";
+                this.form = JSON.parse(JSON.stringify(row));
+                this.zdydialog = true
+            },
+            cancel() {
+                this.zdydialog = false
+            },
+            query() {
+                var name = document.getElementById("input").value;
+                axios.post("/AdminManager/cityQuery", {
+                    city_id: name
+                }).then(response => {
+                    var data = JSON.parse(response.data);
+                    this.tableData = [];
+                    if (data.error_code == 0) {
+                        for (var i of data.cityinfo)
+                        this.tableData.push(i);
+                    }
+                    })
+                    .catch(error => {
+                        this.tableData = [];
+                        console.log(error);
+                    })
+            },
+
+            handleDelete(index, cityID) {
+                this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    axios.post("/AdminManager/cityDelete", {
+                        city_id: cityID
+                    })
+                        .then(response => {
+                            var flag = JSON.parse(response.data).error_code;
+                            if (flag == 0) {
+                                this.$message({
+                                    type: 'success',
+                                    message: '删除成功!'
+                                });
+                                this.tableData.splice(index, 1);
+                            }
+                            else
+                                this.$message({
+                                    type: 'info',
+                                    message: '删除失败!'
+                                });
+                        })
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '已取消删除'
+                    });
+                });
+            },
+
+
+        },
+        data() {
+            return {
+                show: true,
+                inputflightnumber: '',
+                inputflightcompany: '',
+                inputairlineID: '',
+                citymes: {
+                    cityID: ''
+                },
+                tableData: [],
+                zdydialog: false,
+                formLabelWidth: '80px',
+                form: {},
+                submitType: "",
+                rules: {
+                    cityID: [
+                        { required: true, message: '请输入城市编号', trigger: 'blur' },
+                        { min: 4, max: 4, message: '长度为4个字符', trigger: 'blur' }
+                    ],
+                    cityname: [
+                        { required: true, message: '请输入城市名称', trigger: 'blur' },
+                    ],
+                    country: [
+                        { required: true, message: '请输入国家名称', trigger: 'blur' },
+                    ],
+                    COV19risk: [
+                        { required: true, message: '请输入疫情风险等级', trigger: 'blur' },
+                    ],
+                }
+            }
+        }
+    })
+</script>
